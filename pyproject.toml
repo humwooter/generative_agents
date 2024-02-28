@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "generative-agents"
+version = "0.1.0"
+description = "simulation testing virtual environment"
+authors = ["Katya Raman <katyaraman@icloud.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
