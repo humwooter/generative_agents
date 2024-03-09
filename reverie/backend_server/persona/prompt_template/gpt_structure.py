@@ -206,6 +206,12 @@ def GPT_request(prompt, gpt_parameter):
   RETURNS: 
     a str of GPT-3's response. 
   """
+  print("entered GPT_request")
+  print()
+  print("prompt is: ", prompt)
+  print()
+  print("gpt_parameter is: ", gpt_parameter)
+
   temp_sleep()
   try: 
     response = openai.Completion.create(
@@ -224,7 +230,10 @@ def GPT_request(prompt, gpt_parameter):
     return "TOKEN LIMIT EXCEEDED"
 
 
-def generate_prompt(curr_input, prompt_lib_file): 
+def generate_prompt(curr_input, prompt_lib_file):
+  print("entered generate_prompt")
+  print("curr_input: ", curr_input)
+  print()
   """
   Takes in the current input (e.g. comment that you want to classifiy) and 
   the path to a prompt file. The prompt file contains the raw str prompt that
@@ -282,7 +291,7 @@ def get_embedding(text, model="text-embedding-ada-002"):
 
 
 if __name__ == '__main__':
-  gpt_parameter = {"engine": "text-davinci-003", "max_tokens": 50, 
+  gpt_parameter = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 50, 
                    "temperature": 0, "top_p": 1, "stream": False,
                    "frequency_penalty": 0, "presence_penalty": 0, 
                    "stop": ['"']}
