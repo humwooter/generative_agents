@@ -10,13 +10,16 @@ import openai
 import time 
 
 from utils import *
+from persona.prompt_template.print_prompt import *
+
 
 openai.api_key = openai_api_key
 
 def temp_sleep(seconds=0.1):
   time.sleep(seconds)
 
-def ChatGPT_single_request(prompt): 
+def ChatGPT_single_request(prompt):
+  simple_write_to_file("funcs_called.txt", "ChatGPT_single_request") # REMOVE LATER              
   temp_sleep()
 
   completion = openai.ChatCompletion.create(
@@ -31,6 +34,7 @@ def ChatGPT_single_request(prompt):
 # ============================================================================
 
 def GPT4_request(prompt): 
+  simple_write_to_file("funcs_called.txt", "GPT4_request") # REMOVE LATER            
   """
   Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
   server and returns the response. 
@@ -52,11 +56,13 @@ def GPT4_request(prompt):
     return completion["choices"][0]["message"]["content"]
   
   except: 
-    print ("ChatGPT ERROR")
+    #print ("ChatGPT ERROR")
     return "ChatGPT ERROR"
 
 
-def ChatGPT_request(prompt): 
+def ChatGPT_request(prompt):
+  simple_write_to_file("ChatGPT_request-prompts.txt", prompt) # REMOVE LATER             
+  simple_write_to_file("funcs_called.txt", "ChatGPT_request") # REMOVE LATER            
   """
   Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
   server and returns the response. 
@@ -77,7 +83,7 @@ def ChatGPT_request(prompt):
     return completion["choices"][0]["message"]["content"]
   
   except: 
-    print ("ChatGPT ERROR")
+    #print ("ChatGPT ERROR")
     return "ChatGPT ERROR"
 
 
@@ -89,14 +95,17 @@ def GPT4_safe_generate_response(prompt,
                                    func_validate=None,
                                    func_clean_up=None,
                                    verbose=False): 
+  simple_write_to_file("funcs_called.txt", "GPT4_safe_generate_response") # REMOVE LATER            
   prompt = 'GPT-3 Prompt:\n"""\n' + prompt + '\n"""\n'
   prompt += f"Output the response to the prompt above in json. {special_instruction}\n"
   prompt += "Example output json:\n"
   prompt += '{"output": "' + str(example_output) + '"}'
 
   if verbose: 
-    print ("CHAT GPT PROMPT")
-    print (prompt)
+    #print ("CHAT GPT PROMPT")
+    #print (prompt)
+    write_to_file_in_console_logs(filename="prompts.txt", text=prompt)
+
 
   for i in range(repeat): 
 
@@ -110,9 +119,10 @@ def GPT4_safe_generate_response(prompt,
         return func_clean_up(curr_gpt_response, prompt=prompt)
       
       if verbose: 
-        print ("---- repeat count: \n", i, curr_gpt_response)
-        print (curr_gpt_response)
-        print ("~~~~")
+        #print ("---- repeat count: \n", i, curr_gpt_response)
+        write_to_file_in_console_logs(filename="curr-gpt-response.txt", text=curr_gpt_response)
+        #print (curr_gpt_response)
+        #print ("~~~~")
 
     except: 
       pass
@@ -128,38 +138,33 @@ def ChatGPT_safe_generate_response(prompt,
                                    func_validate=None,
                                    func_clean_up=None,
                                    verbose=False): 
-  # prompt = 'GPT-3 Prompt:\n"""\n' + prompt + '\n"""\n'
+  simple_write_to_file("funcs_called.txt", "ChatGPT_safe_generate_response") # REMOVE LATER            
   prompt = '"""\n' + prompt + '\n"""\n'
   prompt += f"Output the response to the prompt above in json. {special_instruction}\n"
   prompt += "Example output json:\n"
   prompt += '{"output": "' + str(example_output) + '"}'
 
   if verbose: 
-    print ("CHAT GPT PROMPT")
-    print (prompt)
+    for i in range(repeat): 
+      try: 
+        curr_gpt_response = ChatGPT_request(prompt).strip()
+        end_index = curr_gpt_response.rfind('}') + 1
+        curr_gpt_response = curr_gpt_response[:end_index]
+        curr_gpt_response = json.loads(curr_gpt_response)["output"]
 
-  for i in range(repeat): 
+        
+        if func_validate(curr_gpt_response, prompt=prompt): 
+          return func_clean_up(curr_gpt_response, prompt=prompt)
+        
+        if verbose: 
+          #print ("---- repeat count: \n", i, curr_gpt_response)
+          #print (curr_gpt_response)
+          # write_to_file_in_console_logs(filename="curr-gpt-response.txt", text=curr_gpt_response)
+          return curr_gpt_response #####
+          #print ("~~~~")
 
-    try: 
-      curr_gpt_response = ChatGPT_request(prompt).strip()
-      end_index = curr_gpt_response.rfind('}') + 1
-      curr_gpt_response = curr_gpt_response[:end_index]
-      curr_gpt_response = json.loads(curr_gpt_response)["output"]
-
-      # print ("---ashdfaf")
-      # print (curr_gpt_response)
-      # print ("000asdfhia")
-      
-      if func_validate(curr_gpt_response, prompt=prompt): 
-        return func_clean_up(curr_gpt_response, prompt=prompt)
-      
-      if verbose: 
-        print ("---- repeat count: \n", i, curr_gpt_response)
-        print (curr_gpt_response)
-        print ("~~~~")
-
-    except: 
-      pass
+      except: 
+        pass
 
   return False
 
@@ -170,9 +175,12 @@ def ChatGPT_safe_generate_response_OLD(prompt,
                                    func_validate=None,
                                    func_clean_up=None,
                                    verbose=False): 
+  simple_write_to_file("funcs_called.txt", "ChatGPT_safe_generate_response_OLD") # REMOVE LATER            
   if verbose: 
-    print ("CHAT GPT PROMPT")
-    print (prompt)
+    #print ("CHAT GPT PROMPT")
+    #print (prompt)
+    write_to_file_in_console_logs(filename="prompts.txt", text=prompt)
+
 
   for i in range(repeat): 
     try: 
@@ -180,13 +188,15 @@ def ChatGPT_safe_generate_response_OLD(prompt,
       if func_validate(curr_gpt_response, prompt=prompt): 
         return func_clean_up(curr_gpt_response, prompt=prompt)
       if verbose: 
-        print (f"---- repeat count: {i}")
-        print (curr_gpt_response)
-        print ("~~~~")
+        #print (f"---- repeat count: {i}")
+        #print (curr_gpt_response)
+        write_to_file_in_console_logs(filename="curr-gpt-response.txt", text=curr_gpt_response)
+
+        #print ("~~~~")
 
     except: 
       pass
-  print ("FAIL SAFE TRIGGERED") 
+  #print ("FAIL SAFE TRIGGERED") 
   return fail_safe_response
 
 
@@ -194,7 +204,8 @@ def ChatGPT_safe_generate_response_OLD(prompt,
 # ###################[SECTION 2: ORIGINAL GPT-3 STRUCTURE] ###################
 # ============================================================================
 
-def GPT_request(prompt, gpt_parameter): 
+def GPT_request(prompt, gpt_parameter):
+  save_gpt_prompt_to_file("GPT_request-prompts.txt", gpt_parameter, prompt)        
   """
   Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
   server and returns the response. 
@@ -206,11 +217,11 @@ def GPT_request(prompt, gpt_parameter):
   RETURNS: 
     a str of GPT-3's response. 
   """
-  print("entered GPT_request")
-  print()
-  print("prompt is: ", prompt)
-  print()
-  print("gpt_parameter is: ", gpt_parameter)
+  #print"entered GPT_request")
+  #print)
+  #print"prompt is: ", prompt)
+  #print)
+  #print"gpt_parameter is: ", gpt_parameter)
 
   temp_sleep()
   try: 
@@ -226,14 +237,13 @@ def GPT_request(prompt, gpt_parameter):
                 stop=gpt_parameter["stop"],)
     return response.choices[0].text
   except: 
-    print ("TOKEN LIMIT EXCEEDED")
+    #print ("TOKEN LIMIT EXCEEDED")
     return "TOKEN LIMIT EXCEEDED"
 
 
 def generate_prompt(curr_input, prompt_lib_file):
-  print("entered generate_prompt")
-  print("curr_input: ", curr_input)
-  print()
+  simple_write_to_file("funcs_called.txt", "generate_prompt") # REMOVE LATER             
+
   """
   Takes in the current input (e.g. comment that you want to classifiy) and 
   the path to a prompt file. The prompt file contains the raw str prompt that
@@ -267,22 +277,28 @@ def safe_generate_response(prompt,
                            fail_safe_response="error",
                            func_validate=None,
                            func_clean_up=None,
-                           verbose=False): 
+                           verbose=False):
+ 
   if verbose: 
-    print (prompt)
+    simple_write_to_file("funcs_called.txt", "safe_generate_response") # REMOVE LATER             
+    write_to_file_in_console_logs(filename="prompts.txt", text=prompt)
+
 
   for i in range(repeat): 
     curr_gpt_response = GPT_request(prompt, gpt_parameter)
     if func_validate(curr_gpt_response, prompt=prompt): 
       return func_clean_up(curr_gpt_response, prompt=prompt)
     if verbose: 
-      print ("---- repeat count: ", i, curr_gpt_response)
-      print (curr_gpt_response)
-      print ("~~~~")
+      #print ("---- repeat count: ", i, curr_gpt_response)
+      #print (curr_gpt_response)
+      write_to_file_in_console_logs(filename="curr-gpt-response.txt", text=curr_gpt_response)
+
+      #print ("~~~~")
   return fail_safe_response
 
 
 def get_embedding(text, model="text-embedding-ada-002"):
+  simple_write_to_file("funcs_called.txt", "get_embedding") # REMOVE LATER             
   text = text.replace("\n", " ")
   if not text: 
     text = "this is blank"
@@ -317,24 +333,4 @@ if __name__ == '__main__':
                                  __func_clean_up,
                                  True)
 
-  print (output)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  

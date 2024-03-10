@@ -16,7 +16,7 @@ from global_methods import *
 from persona.prompt_template.gpt_structure import *
 from persona.prompt_template.print_prompt import *
 
-def get_random_alphanumeric(i=6, j=6): 
+def get_random_alphanumeric(i=6, j=6):
   """
   Returns a random alpha numeric strength that has the length of somewhere
   between i and j. 
@@ -37,6 +37,7 @@ def get_random_alphanumeric(i=6, j=6):
 ##############################################################################
 
 def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_wake_up_hour") # REMOVE LATER
   """
   Given the persona, returns an integer that indicates the hour when the 
   persona wakes up.  
@@ -78,7 +79,7 @@ def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False):
                                    __func_validate, __func_clean_up)
   
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
     
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -100,6 +101,8 @@ def run_gpt_prompt_daily_plan(persona,
   OUTPUT: 
     a list of daily actions in broad strokes.
   """
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_daily_plan") # REMOVE LATER
+
   def create_prompt_input(persona, wake_up_hour, test_input=None):
     if test_input: return test_input
     prompt_input = []
@@ -152,7 +155,7 @@ def run_gpt_prompt_daily_plan(persona,
               + output)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
     
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -164,7 +167,8 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
                                             hour_str,
                                             intermission2=None,
                                             test_input=None, 
-                                            verbose=False): 
+                                            verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_generate_hourly_schedule") # REMOVE LATER
   def create_prompt_input(persona, 
                           curr_hour_str, 
                           p_f_ds_hourly_org,
@@ -231,40 +235,6 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
     fs = "asleep"
     return fs
 
-  # # ChatGPT Plugin ===========================================================
-  # def __chat_func_clean_up(gpt_response, prompt=""): ############
-  #   cr = gpt_response.strip()
-  #   if cr[-1] == ".":
-  #     cr = cr[:-1]
-  #   return cr
-
-  # def __chat_func_validate(gpt_response, prompt=""): ############
-  #   try: __func_clean_up(gpt_response, prompt="")
-  #   except: return False
-  #   return True
-
-  # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 10") ########
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 15, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v3_ChatGPT/generate_hourly_schedule_v2.txt" ########
-  # prompt_input = create_prompt_input(persona, 
-  #                                    curr_hour_str, 
-  #                                    p_f_ds_hourly_org,
-  #                                    hour_str, 
-  #                                    intermission2,
-  #                                    test_input)  ########
-  # prompt = generate_prompt(prompt_input, prompt_template)
-  # example_output = "studying for her music classes" ########
-  # special_instruction = "The output should ONLY include the part of the sentence that completes the last line in the schedule above." ########
-  # fail_safe = get_fail_safe() ########
-  # output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
-  #                                         __chat_func_validate, __chat_func_clean_up, True)
-  # if output != False: 
-  #   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # # ChatGPT Plugin ===========================================================
-
-
   gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 50, 
                "temperature": 0.5, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
@@ -282,7 +252,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
                                    __func_validate, __func_clean_up)
   
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
     
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -299,6 +269,7 @@ def run_gpt_prompt_task_decomp(persona,
                                duration, 
                                test_input=None, 
                                verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_task_decomp") # REMOVE LATER
   def create_prompt_input(persona, task, duration, test_input=None):
 
     """
@@ -321,7 +292,11 @@ def run_gpt_prompt_task_decomp(persona,
     curr_time_range = ""
 
     print ("DEBUG")
-    print (persona.scratch.f_daily_schedule_hourly_org)
+    # print (persona.scratch.f_daily_schedule_hourly_org)
+
+    persona_hourly_schedule_filename = persona.scratch.name + " hourly schedule.txt"
+    print("persona_hourly_schedule_filename: ", persona_hourly_schedule_filename)
+    simple_write_to_file(persona_hourly_schedule_filename, '\n'.join(map(str, persona.scratch.f_daily_schedule_hourly_org)))
     print (all_indices)
 
     summ_str = f'Today is {persona.scratch.curr_time.strftime("%B %d, %Y")}. '
@@ -358,7 +333,7 @@ def run_gpt_prompt_task_decomp(persona,
 
   def __func_clean_up(gpt_response, prompt=""):
     print ("TOODOOOOOO")
-    print (gpt_response)
+    simple_write_to_file("gpt_responses.txt", gpt_response)
     print ("-==- -==- -==- ")
 
     # TODO SOMETHING HERE sometimes fails... See screenshot
@@ -435,7 +410,7 @@ def run_gpt_prompt_task_decomp(persona,
   fail_safe = get_fail_safe()
 
   print ("?????")
-  print (prompt)
+  simple_write_to_file("prompts_simple.txt", prompt)
   output = safe_generate_response(prompt, gpt_param, 5, get_fail_safe(),
                                    __func_validate, __func_clean_up)
 
@@ -452,8 +427,8 @@ def run_gpt_prompt_task_decomp(persona,
   print ("IMPORTANT VVV DEBUG")
 
   # print (prompt_input)
-  # print (prompt)
-  print (output)
+  # simple_write_to_file("prompts_simple.txt", prompt)
+  simple_write_to_file("output.txt", '\n'.join(map(str, output))) #####
 
   fin_output = []
   time_sum = 0
@@ -483,7 +458,7 @@ def run_gpt_prompt_task_decomp(persona,
 
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
     
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -495,14 +470,22 @@ def run_gpt_prompt_action_sector(action_description,
                                 maze, 
                                 test_input=None, 
                                 verbose=False):
-  def create_prompt_input(action_description, persona, maze, test_input=None): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_action_sector") # REMOVE LATER
+  def create_prompt_input(action_description, persona, maze, test_input=None):
+    persona_filename = persona.scratch.name + "-persona.txt" ######
+    write_class_to_console_logs(persona.scratch, persona_filename)
+    print("PERSONA: ", persona)
+    print("CURR MAZE: ", maze) #####
     act_world = f"{maze.access_tile(persona.scratch.curr_tile)['world']}"
-    
+    print("ACT WORLD: ", act_world) #####
     prompt_input = []
-    
+    print("persona.scratch.living_area: ", persona.scratch.living_area)
+    print("persona.scratch.living_area.split(): ", persona.scratch.living_area.split(":"))
     prompt_input += [persona.scratch.get_str_name()]
     prompt_input += [persona.scratch.living_area.split(":")[1]]
     x = f"{act_world}:{persona.scratch.living_area.split(':')[1]}"
+    # prompt_input += [persona.scratch.living_area.split(":")[1]]
+    # x = f"{act_world}:{persona.scratch.living_area.split(':')[1]}"
     prompt_input += [persona.s_mem.get_str_accessible_sector_arenas(x)]
 
 
@@ -570,33 +553,6 @@ def run_gpt_prompt_action_sector(action_description,
     return fs
 
 
-  # # ChatGPT Plugin ===========================================================
-  # def __chat_func_clean_up(gpt_response, prompt=""): ############
-  #   cr = gpt_response.strip()
-  #   return cr
-
-  # def __chat_func_validate(gpt_response, prompt=""): ############
-  #   try: 
-  #     gpt_response = __func_clean_up(gpt_response, prompt="")
-  #   except: 
-  #     return False
-  #   return True 
-
-  # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 20") ########
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 15, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v3_ChatGPT/action_location_sector_v2.txt" ########
-  # prompt_input = create_prompt_input(action_description, persona, maze)  ########
-  # prompt = generate_prompt(prompt_input, prompt_template)
-  # example_output = "Johnson Park" ########
-  # special_instruction = "The value for the output must contain one of the area options above verbatim (including lower/upper case)." ########
-  # fail_safe = get_fail_safe() ########
-  # output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
-  #                                         __chat_func_validate, __chat_func_clean_up, True)
-  # if output != False: 
-  #   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # # ChatGPT Plugin ===========================================================
 
 
 
@@ -621,7 +577,7 @@ def run_gpt_prompt_action_sector(action_description,
   print ("DEBUG", random.choice(x), "------", output)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
 
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -633,6 +589,7 @@ def run_gpt_prompt_action_arena(action_description,
                                 maze, act_world, act_sector,
                                 test_input=None, 
                                 verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_action_arena") # REMOVE LATER
   def create_prompt_input(action_description, persona, maze, act_world, act_sector, test_input=None): 
     prompt_input = []
     # prompt_input += [persona.scratch.get_str_name()]
@@ -709,14 +666,14 @@ def run_gpt_prompt_action_arena(action_description,
   fail_safe = get_fail_safe()
   output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
                                    __func_validate, __func_clean_up)
-  print (output)
+  simple_write_to_file("output.txt", '\n'.join(map(str, output))) #####
   # y = f"{act_world}:{act_sector}"
   # x = [i.strip() for i in persona.s_mem.get_str_accessible_sector_arenas(y).split(",")]
   # if output not in x: 
   #   output = random.choice(x)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
 
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -729,6 +686,7 @@ def run_gpt_prompt_action_game_object(action_description,
                                       temp_address,
                                       test_input=None, 
                                       verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_action_game_object") # REMOVE LATER
   def create_prompt_input(action_description, 
                           persona, 
                           temp_address, 
@@ -774,7 +732,7 @@ def run_gpt_prompt_action_game_object(action_description,
     output = random.choice(x)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -783,6 +741,7 @@ def run_gpt_prompt_action_game_object(action_description,
 
 
 def run_gpt_prompt_pronunciatio(action_description, persona, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_pronunciatio") # REMOVE LATER 
   def create_prompt_input(action_description): 
     if "(" in action_description: 
       action_description = action_description.split("(")[-1].split(")")[0]
@@ -838,42 +797,10 @@ def run_gpt_prompt_pronunciatio(action_description, persona, verbose=False):
                                           __chat_func_validate, __chat_func_clean_up, True)
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
-
-
-
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 15, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
-  # prompt_template = "persona/prompt_template/v2/generate_pronunciatio_v1.txt"
-  # prompt_input = create_prompt_input(action_description)
-
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
-  
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
-
-
-
-
-
-
-
-
-
 
 
 def run_gpt_prompt_event_triple(action_description, persona, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_event_triple") # REMOVE LATER 
   def create_prompt_input(action_description, persona): 
     if "(" in action_description: 
       action_description = action_description.split("(")[-1].split(")")[0]
@@ -900,39 +827,6 @@ def run_gpt_prompt_event_triple(action_description, persona, verbose=False):
     return fs
 
 
-  # ChatGPT Plugin ===========================================================
-  # def __chat_func_clean_up(gpt_response, prompt=""): ############
-  #   cr = gpt_response.strip()
-  #   cr = [i.strip() for i in cr.split(")")[0].split(",")]
-  #   return cr
-
-  # def __chat_func_validate(gpt_response, prompt=""): ############
-  #   try: 
-  #     gpt_response = __func_clean_up(gpt_response, prompt="")
-  #     if len(gpt_response) != 2: 
-  #       return False
-  #   except: return False
-  #   return True 
-
-  # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 5") ########
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 15, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v3_ChatGPT/generate_event_triple_v1.txt" ########
-  # prompt_input = create_prompt_input(action_description, persona)  ########
-  # prompt = generate_prompt(prompt_input, prompt_template)
-  # example_output = "(Jane Doe, cooking, breakfast)" ########
-  # special_instruction = "The value for the output must ONLY contain the triple. If there is an incomplete element, just say 'None' but there needs to be three elements no matter what." ########
-  # fail_safe = get_fail_safe(persona) ########
-  # output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
-  #                                         __chat_func_validate, __chat_func_clean_up, True)
-  # if output != False: 
-  #   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
-
-
-
-
   gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 30, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
@@ -945,24 +839,15 @@ def run_gpt_prompt_event_triple(action_description, persona, verbose=False):
   output = (persona.name, output[0], output[1])
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
 
-
-
-
-
-
-
-
-
-
-
-
 def run_gpt_prompt_act_obj_desc(act_game_object, act_desp, persona, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_act_obj_desc") # REMOVE LATER 
+  # print("ENTERED ", run_gpt_prompt_act_obj_desc)
   def create_prompt_input(act_game_object, act_desp, persona): 
     prompt_input = [act_game_object, 
                     persona.name,
@@ -1012,37 +897,18 @@ def run_gpt_prompt_act_obj_desc(act_game_object, act_desp, persona, verbose=Fals
   fail_safe = get_fail_safe(act_game_object) ########
   output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
                                           __chat_func_validate, __chat_func_clean_up, True)
+
+
+  print("PROMPT: ", prompt)
+  print("OUTPUT OF ", run_gpt_prompt_act_obj_desc, " is: ", output) #####
+  print("PROMPT TEMPLATE: ", prompt_template) #####
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
-
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 30, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": ["\n"]}
-  # prompt_template = "persona/prompt_template/v2/generate_obj_event_v1.txt"
-  # prompt_input = create_prompt_input(act_game_object, act_desp, persona)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-  # fail_safe = get_fail_safe(act_game_object)
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
   
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
 
-
-
-
-
-
-
-
-def run_gpt_prompt_act_obj_event_triple(act_game_object, act_obj_desc, persona, verbose=False): 
+def run_gpt_prompt_act_obj_event_triple(act_game_object, act_obj_desc, persona, verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_act_obj_event_triple") # REMOVE LATER 
   def create_prompt_input(act_game_object, act_obj_desc): 
     prompt_input = [act_game_object, 
                     act_obj_desc,
@@ -1078,7 +944,7 @@ def run_gpt_prompt_act_obj_event_triple(act_game_object, act_obj_desc, persona, 
   output = (act_game_object, output[0], output[1])
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -1095,7 +961,8 @@ def run_gpt_prompt_new_decomp_schedule(persona,
                                        inserted_act,
                                        inserted_act_dur,
                                        test_input=None, 
-                                       verbose=False): 
+                                       verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_new_decomp_schedule") # REMOVE LATER  
   def create_prompt_input(persona, 
                            main_act_dur, 
                            truncated_act_dur, 
@@ -1224,14 +1091,14 @@ def run_gpt_prompt_new_decomp_schedule(persona,
                                    __func_validate, __func_clean_up)
   
   # print ("* * * * output")
-  # print (output)
+  #  simple_write_to_file("output.txt", '\n'.join(map(str, output))) #####
   # print ('* * * * fail_safe')
   # print (fail_safe)
 
 
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -1243,6 +1110,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
 
 def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved,test_input=None, 
                                        verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_decide_to_talk") # REMOVE LATER  
   def create_prompt_input(init_persona, target_persona, retrieved, 
                           test_input=None): 
     last_chat = init_persona.a_mem.get_last_chat(target_persona.name)
@@ -1333,7 +1201,7 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved,test_input=
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -1343,6 +1211,7 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved,test_input=
 
 def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved,test_input=None, 
                                        verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_decide_to_react") # REMOVE LATER  
   def create_prompt_input(init_persona, target_persona, retrieved, 
                           test_input=None): 
 
@@ -1431,29 +1300,16 @@ def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved,test_input
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
-                                       test_input=None, verbose=False): 
+                                       test_input=None, verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_create_conversation") # REMOVE LATER   
   def create_prompt_input(init_persona, target_persona, curr_loc, 
                           test_input=None): 
 
@@ -1529,10 +1385,6 @@ def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
     return prompt_input
   
   def __func_clean_up(gpt_response, prompt=""):
-    # print ("???")
-    # print (gpt_response)
-
-
     gpt_response = (prompt + gpt_response).split("What would they talk about now?")[-1].strip()
     content = re.findall('"([^"]*)"', gpt_response)
 
@@ -1574,21 +1426,15 @@ def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
 
 
-
-
-
-
-
-
-
 def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_summarize_conversation") # REMOVE LATER   
   def create_prompt_input(conversation, test_input=None): 
     convo_str = ""
     for row in conversation: 
@@ -1639,30 +1485,10 @@ def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None
                                           __chat_func_validate, __chat_func_clean_up, True)
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
 
 
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 50, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v2/summarize_conversation_v1.txt"
-  # prompt_input = create_prompt_input(conversation, test_input)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
-  
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
-
-
-
-def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbose=False): 
+def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_extract_keywords") # REMOVE LATER    
   def create_prompt_input(description, test_input=None): 
     if "\n" in description: 
       description = description.replace("\n", " <LINE_BREAK> ")
@@ -1671,7 +1497,7 @@ def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbo
   
   def __func_clean_up(gpt_response, prompt=""):
     print ("???")
-    print (gpt_response)
+    simple_write_to_file("gpt_responses.txt", gpt_response)
     gpt_response = gpt_response.strip().split("Emotive keywords:")
     factual = [i.strip() for i in gpt_response[0].split(",")]
     emotive = [i.strip() for i in gpt_response[1].split(",")]
@@ -1709,20 +1535,15 @@ def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbo
 
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
 
 
-
-
-
-
-
-
 def run_gpt_prompt_keyword_to_thoughts(persona, keyword, concept_summary, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_keyword_to_thoughts") # REMOVE LATER    
   def create_prompt_input(persona, keyword, concept_summary, test_input=None): 
     prompt_input = [keyword, concept_summary, persona.name]
     return prompt_input
@@ -1753,16 +1574,10 @@ def run_gpt_prompt_keyword_to_thoughts(persona, keyword, concept_summary, test_i
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
-
-
-
-
-
 
 
 
@@ -1770,7 +1585,8 @@ def run_gpt_prompt_convo_to_thoughts(persona,
                                     init_persona_name,  
                                     target_persona_name,
                                     convo_str,
-                                    fin_target, test_input=None, verbose=False): 
+                                    fin_target, test_input=None, verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_convo_to_thoughts") # REMOVE LATER     
   def create_prompt_input(init_persona_name,  
                                     target_persona_name,
                                     convo_str,
@@ -1811,38 +1627,15 @@ def run_gpt_prompt_convo_to_thoughts(persona,
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_event_poignancy") # REMOVE LATER     
   def create_prompt_input(persona, event_description, test_input=None): 
     prompt_input = [persona.scratch.name,
                     persona.scratch.get_str_iss(),
@@ -1892,30 +1685,11 @@ def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, 
                                           __chat_func_validate, __chat_func_clean_up, True)
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
 
-
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 3, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v2/poignancy_event_v1.txt"
-  # prompt_input = create_prompt_input(persona, event_description)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
-  
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
 
 
 def run_gpt_prompt_thought_poignancy(persona, event_description, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_thought_poignancy") # REMOVE LATER     
   def create_prompt_input(persona, event_description, test_input=None): 
     prompt_input = [persona.scratch.name,
                     persona.scratch.get_str_iss(),
@@ -1963,30 +1737,15 @@ def run_gpt_prompt_thought_poignancy(persona, event_description, test_input=None
                                           __chat_func_validate, __chat_func_clean_up, True)
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
-
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 3, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v2/poignancy_thought_v1.txt"
-  # prompt_input = create_prompt_input(persona, event_description)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
   
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
+
+
+
 
 
 
 def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_chat_poignancy") # REMOVE LATER     
   def create_prompt_input(persona, event_description, test_input=None): 
     prompt_input = [persona.scratch.name,
                     persona.scratch.get_str_iss(),
@@ -2035,33 +1794,10 @@ def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, v
                                           __chat_func_validate, __chat_func_clean_up, True)
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
 
 
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 3, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v2/poignancy_chat_v1.txt"
-  # prompt_input = create_prompt_input(persona, event_description)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
-  
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
-
-
-
-
-def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=False): 
+def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=False):
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_focal_pt") # REMOVE LATER      
   def create_prompt_input(persona, statements, n, test_input=None): 
     prompt_input = [statements, str(n)]
     return prompt_input
@@ -2113,11 +1849,6 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
   # ChatGPT Plugin ===========================================================
 
-
-
-
-
-
   gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 150, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
@@ -2130,7 +1861,7 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2140,6 +1871,7 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
 
   
 def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_insight_and_guidance") # REMOVE LATER        
   def create_prompt_input(persona, statements, n, test_input=None): 
     prompt_input = [statements, str(n)]
     return prompt_input
@@ -2181,7 +1913,7 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2194,6 +1926,7 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
 
 
 def run_gpt_prompt_agent_chat_summarize_ideas(persona, target_persona, statements, curr_context, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_agent_chat_summarize_ideas") # REMOVE LATER        
   def create_prompt_input(persona, target_persona, statements, curr_context, test_input=None): 
     prompt_input = [persona.scratch.get_str_curr_date_str(), curr_context, persona.scratch.currently, 
                     statements, persona.scratch.name, target_persona.scratch.name]
@@ -2238,31 +1971,10 @@ def run_gpt_prompt_agent_chat_summarize_ideas(persona, target_persona, statement
                                           __chat_func_validate, __chat_func_clean_up, True)
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
-
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 150, 
-  #              "temperature": 0.5, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v2/summarize_chat_ideas_v1.txt"
-  # prompt_input = create_prompt_input(persona, target_persona, statements, curr_context)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
   
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
-
-
 
 def run_gpt_prompt_agent_chat_summarize_relationship(persona, target_persona, statements, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_agent_chat_summarize_relationship") # REMOVE LATER        
   def create_prompt_input(persona, target_persona, statements, test_input=None): 
     prompt_input = [statements, persona.scratch.name, target_persona.scratch.name]
     return prompt_input
@@ -2321,7 +2033,7 @@ def run_gpt_prompt_agent_chat_summarize_relationship(persona, target_persona, st
   #                                  __func_validate, __func_clean_up)
 
   # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
+  #   write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
   #                     prompt_input, prompt, output)
   
   # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2334,6 +2046,7 @@ def run_gpt_prompt_agent_chat(maze, persona, target_persona,
                                curr_context, 
                                init_summ_idea, 
                                target_summ_idea, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_agent_chat") # REMOVE LATER      
   def create_prompt_input(persona, target_persona, curr_context, init_summ_idea, target_summ_idea, test_input=None): 
     prev_convo_insert = "\n"
     if persona.a_mem.seq_chat: 
@@ -2374,7 +2087,7 @@ def run_gpt_prompt_agent_chat(maze, persona, target_persona,
     return prompt_input
   
   def __func_clean_up(gpt_response, prompt=""):
-    print (gpt_response)
+    simple_write_to_file("gpt_responses.txt", gpt_response)
 
     gpt_response = (prompt + gpt_response).split("Here is their conversation.")[-1].strip()
     content = re.findall('"([^"]*)"', gpt_response)
@@ -2435,40 +2148,6 @@ def run_gpt_prompt_agent_chat(maze, persona, target_persona,
   # print ("HERE END JULY 23 -- ----- ") ########
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
-
-
-
-
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 2000, 
-  #              "temperature": 0.7, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v2/agent_chat_v1.txt"
-  # prompt_input = create_prompt_input(persona, target_persona, curr_context, init_summ_idea, target_summ_idea)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
-  
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
-
-# =======================
-# =======================
-# =======================
-# =======================
-
-
-
-
-
 
 
 def run_gpt_prompt_summarize_ideas(persona, statements, question, test_input=None, verbose=False): 
@@ -2515,26 +2194,6 @@ def run_gpt_prompt_summarize_ideas(persona, statements, question, test_input=Non
                                           __chat_func_validate, __chat_func_clean_up, True)
   if output != False: 
     return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # ChatGPT Plugin ===========================================================
-
-
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 150, 
-  #              "temperature": 0.5, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v2/summarize_ideas_v1.txt"
-  # prompt_input = create_prompt_input(persona, statements, question)
-  # prompt = generate_prompt(prompt_input, prompt_template)
-
-  # fail_safe = get_fail_safe()
-  # output = safe_generate_response(prompt, gpt_param, 5, fail_safe,
-  #                                  __func_validate, __func_clean_up)
-
-  # if debug or verbose: 
-  #   print_run_prompts(prompt_template, persona, gpt_param, 
-  #                     prompt_input, prompt, output)
-  
-  # return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
 
 
 def run_gpt_prompt_generate_next_convo_line(persona, interlocutor_desc, prev_convo, retrieved_summary, test_input=None, verbose=False): 
@@ -2564,35 +2223,6 @@ def run_gpt_prompt_generate_next_convo_line(persona, interlocutor_desc, prev_con
 
 
 
-  # # ChatGPT Plugin ===========================================================
-  # def __chat_func_clean_up(gpt_response, prompt=""): ############
-  #   return gpt_response.split('"')[0].strip()
-
-  # def __chat_func_validate(gpt_response, prompt=""): ############
-  #   try: 
-  #     __func_clean_up(gpt_response, prompt)
-  #     return True
-  #   except:
-  #     return False 
-
-  # print ("asdhfapsh8p9hfaiafdsi;ldfj as DEBUG 15") ########
-  # gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 15, 
-  #              "temperature": 0, "top_p": 1, "stream": False,
-  #              "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
-  # prompt_template = "persona/prompt_template/v3_ChatGPT/generate_next_convo_line_v1.txt" ########
-  # prompt_input = create_prompt_input(persona, interlocutor_desc, prev_convo, retrieved_summary)  ########
-  # prompt = generate_prompt(prompt_input, prompt_template)
-  # example_output = 'Hello' ########
-  # special_instruction = 'The output should be a string that responds to the question. Again, only use the context included in the "Note" to generate the response' ########
-  # fail_safe = get_fail_safe() ########
-  # output = ChatGPT_safe_generate_response(prompt, example_output, special_instruction, 3, fail_safe,
-  #                                         __chat_func_validate, __chat_func_clean_up, True)
-  # if output != False: 
-  #   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-  # # ChatGPT Plugin ===========================================================
-
-
-
   gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 250, 
                "temperature": 1, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
@@ -2605,7 +2235,7 @@ def run_gpt_prompt_generate_next_convo_line(persona, interlocutor_desc, prev_con
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2616,6 +2246,7 @@ def run_gpt_prompt_generate_next_convo_line(persona, interlocutor_desc, prev_con
 
 
 def run_gpt_prompt_generate_whisper_inner_thought(persona, whisper, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_generate_whisper_inner_thought") # REMOVE LATER        
   def create_prompt_input(persona, whisper, test_input=None): 
     prompt_input = [persona.scratch.name, whisper]
     return prompt_input
@@ -2645,7 +2276,7 @@ def run_gpt_prompt_generate_whisper_inner_thought(persona, whisper, test_input=N
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2653,6 +2284,7 @@ def run_gpt_prompt_generate_whisper_inner_thought(persona, whisper, test_input=N
 
 
 def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_planning_thought_on_convo") # REMOVE LATER          
   def create_prompt_input(persona, all_utt, test_input=None): 
     prompt_input = [all_utt, persona.scratch.name, persona.scratch.name, persona.scratch.name]
     return prompt_input
@@ -2682,7 +2314,7 @@ def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, 
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2690,6 +2322,7 @@ def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, 
 
 
 def run_gpt_prompt_memo_on_convo(persona, all_utt, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_memo_on_convo") # REMOVE LATER          
   def create_prompt_input(persona, all_utt, test_input=None): 
     prompt_input = [all_utt, persona.scratch.name, persona.scratch.name, persona.scratch.name]
     return prompt_input
@@ -2748,7 +2381,7 @@ def run_gpt_prompt_memo_on_convo(persona, all_utt, test_input=None, verbose=Fals
                                    __func_validate, __func_clean_up)
 
   if debug or verbose: 
-    print_run_prompts(prompt_template, persona, gpt_param, 
+    write_run_prompts_to_file("prompts.txt",prompt_template, persona, gpt_param, 
                       prompt_input, prompt, output)
   
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
@@ -2757,6 +2390,7 @@ def run_gpt_prompt_memo_on_convo(persona, all_utt, test_input=None, verbose=Fals
 
 
 def run_gpt_generate_safety_score(persona, comment, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_generate_safety_score") # REMOVE LATER            
   def create_prompt_input(comment, test_input=None):
     prompt_input = [comment]
     return prompt_input
@@ -2784,11 +2418,11 @@ def run_gpt_generate_safety_score(persona, comment, test_input=None, verbose=Fal
   prompt_input = create_prompt_input(comment) 
   print ("22")
   prompt = generate_prompt(prompt_input, prompt_template)
-  print (prompt)
+  simple_write_to_file("prompts_simple.txt", prompt)
   fail_safe = get_fail_safe() 
   output = ChatGPT_safe_generate_response_OLD(prompt, 3, fail_safe,
                         __chat_func_validate, __chat_func_clean_up, verbose)
-  print (output)
+  simple_write_to_file("output.txt", '\n'.join(map(str, output))) #####
   
   gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
@@ -2798,27 +2432,30 @@ def run_gpt_generate_safety_score(persona, comment, test_input=None, verbose=Fal
 
 
 def extract_first_json_dict(data_str):
-    # Find the first occurrence of a JSON object within the string
-    start_idx = data_str.find('{')
-    end_idx = data_str.find('}', start_idx) + 1
+  simple_write_to_file("funcs_called.txt", "extract_first_json_dict") # REMOVE LATER            
+  # Find the first occurrence of a JSON object within the string
+  start_idx = data_str.find('{')
+  end_idx = data_str.find('}', start_idx) + 1
 
-    # Check if both start and end indices were found
-    if start_idx == -1 or end_idx == 0:
-        return None
+  # Check if both start and end indices were found
+  if start_idx == -1 or end_idx == 0:
+      return None
 
-    # Extract the first JSON dictionary
-    json_str = data_str[start_idx:end_idx]
+  # Extract the first JSON dictionary
+  json_str = data_str[start_idx:end_idx]
 
-    try:
-        # Attempt to parse the JSON data
-        json_dict = json.loads(json_str)
-        return json_dict
-    except json.JSONDecodeError:
-        # If parsing fails, return None
-        return None
+  try:
+      # Attempt to parse the JSON data
+      json_dict = json.loads(json_str)
+      return json_dict
+  except json.JSONDecodeError:
+      # If parsing fails, return None
+      return None
 
 
 def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retrieved, curr_context, curr_chat, test_input=None, verbose=False): 
+  simple_write_to_file("funcs_called.txt", "run_gpt_generate_iterative_chat_utt") # REMOVE LATER            
+
   def create_prompt_input(maze, init_persona, target_persona, retrieved, curr_context, curr_chat, test_input=None):
     persona = init_persona
     prev_convo_insert = "\n"
@@ -2878,7 +2515,7 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
     print ("ugh...")
     try: 
       # print ("debug 1")
-      # print (gpt_response)
+      # simple_write_to_file("gpt_responses.txt", gpt_response)
       # print ("debug 2")
 
       print (extract_first_json_dict(gpt_response))
@@ -2899,32 +2536,13 @@ def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retr
   prompt_input = create_prompt_input(maze, init_persona, target_persona, retrieved, curr_context, curr_chat) 
   print ("22")
   prompt = generate_prompt(prompt_input, prompt_template)
-  print (prompt)
+  simple_write_to_file("prompts_simple.txt", prompt)
   fail_safe = get_fail_safe() 
   output = ChatGPT_safe_generate_response_OLD(prompt, 3, fail_safe,
                         __chat_func_validate, __chat_func_clean_up, verbose)
-  print (output)
+  simple_write_to_file("output.txt", '\n'.join(map(str, output))) #####
   
   gpt_param = {"engine": "gpt-3.5-turbo-instruct", "max_tokens": 50, 
                "temperature": 0, "top_p": 1, "stream": False,
                "frequency_penalty": 0, "presence_penalty": 0, "stop": None}
   return output, [output, prompt, gpt_param, prompt_input, fail_safe]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
