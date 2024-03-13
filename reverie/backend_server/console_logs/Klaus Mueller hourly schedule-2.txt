@@ -1,0 +1,22 @@
+
+=== START OF TEXT =============================================
+['sleeping', 420]
+['waking up and completing his morning routine (stretching in bed)', 5]
+['waking up and completing his morning routine (using the bathroom)', 5]
+['waking up and completing his morning routine (taking a shower)', 15]
+['waking up and completing his morning routine (getting dressed)', 5]
+['waking up and completing his morning routine (making breakfast)', 10]
+['waking up and completing his morning routine (eating breakfast)', 10]
+['waking up and completing his morning routine (washing his dishes)', 10]
+['at the library at Oak Hill College', 60]
+['researching and writing his research paper', 180]
+['taking a break for lunch', 60]
+['back at the library and continuing to work on his research paper', 60]
+['researching and writing his research paper', 180]
+['having dinner at Hobbs Cafe', 60]
+['finishing up any remaining work for the day', 180]
+['winding down for the day and preparing for bed', 60]
+["going to bed at 11:00 pm to get a good night's rest for the next day", 60]
+["sleeping to get a good night's rest for the next day", 60]
+=== END OF TEXT ===============================================
+

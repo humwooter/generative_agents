@@ -1,0 +1,181 @@
+act_address: None
+act_description: None
+act_duration: None
+act_event: ('Klaus Mueller', None, None)
+act_obj_description: None
+act_obj_event: (None, None, None)
+act_obj_pronunciatio: None
+act_path_set: False
+act_pronunciatio: None
+act_start_time: None
+age: 20
+att_bandwidth: 8
+chat: None
+chatting_end_time: None
+chatting_with: None
+chatting_with_buffer: {}
+concept_forget: 100
+curr_tile: (126, 46)
+curr_time: "2023-02-13 00:00:00"
+currently: Klaus Mueller is writing a research paper on the effects of gentrification in low-income communities.
+daily_plan_req: Klaus Mueller goes to the library at Oak Hill College early in the morning, spends his days writing, and eats at Hobbs Cafe.
+daily_reflection_size: 5
+daily_reflection_time: 180
+daily_req: [
+  "wake up and complete the morning routine at 7:00 am",
+  "go to the library at Oak Hill College at 8:00 am",
+  "spend the day researching and writing his research paper",
+  "take a break for lunch at 12:00 pm",
+  "continue working on his paper until 4:00 pm",
+  "go to Hobbs Cafe for dinner at 5:00 pm",
+  "finish up any remaining work in the evening"
+]
+f_daily_schedule: [
+  [
+    "sleeping",
+    420
+  ],
+  [
+    "waking up and completing his morning routine (stretching in bed)",
+    5
+  ],
+  [
+    "waking up and completing his morning routine (using the bathroom)",
+    5
+  ],
+  [
+    "waking up and completing his morning routine (taking a shower)",
+    15
+  ],
+  [
+    "waking up and completing his morning routine (getting dressed)",
+    5
+  ],
+  [
+    "waking up and completing his morning routine (making breakfast)",
+    10
+  ],
+  [
+    "waking up and completing his morning routine (eating breakfast)",
+    10
+  ],
+  [
+    "waking up and completing his morning routine (washing his dishes)",
+    10
+  ],
+  [
+    "at the library at Oak Hill College",
+    60
+  ],
+  [
+    "researching and writing his research paper",
+    180
+  ],
+  [
+    "taking a break for lunch",
+    60
+  ],
+  [
+    "back at the library and continuing to work on his research paper",
+    60
+  ],
+  [
+    "researching and writing his research paper",
+    180
+  ],
+  [
+    "having dinner at Hobbs Cafe",
+    60
+  ],
+  [
+    "finishing up any remaining work for the day",
+    180
+  ],
+  [
+    "winding down for the day and preparing for bed",
+    60
+  ],
+  [
+    "going to bed at 11:00 pm to get a good night's rest for the next day",
+    60
+  ],
+  [
+    "sleeping to get a good night's rest for the next day",
+    60
+  ],
+  [
+    "sleeping",
+    0
+  ]
+]
+f_daily_schedule_hourly_org: [
+  [
+    "sleeping",
+    420
+  ],
+  [
+    "waking up and completing his morning routine",
+    60
+  ],
+  [
+    "at the library at Oak Hill College",
+    60
+  ],
+  [
+    "researching and writing his research paper",
+    180
+  ],
+  [
+    "taking a break for lunch",
+    60
+  ],
+  [
+    "back at the library and continuing to work on his research paper",
+    60
+  ],
+  [
+    "researching and writing his research paper",
+    180
+  ],
+  [
+    "having dinner at Hobbs Cafe",
+    60
+  ],
+  [
+    "finishing up any remaining work for the day",
+    180
+  ],
+  [
+    "winding down for the day and preparing for bed",
+    60
+  ],
+  [
+    "going to bed at 11:00 pm to get a good night's rest for the next day",
+    60
+  ],
+  [
+    "sleeping to get a good night's rest for the next day",
+    60
+  ]
+]
+first_name: Klaus
+importance_ele_n: 5
+importance_trigger_curr: 145
+importance_trigger_max: 150
+importance_w: 1
+innate: kind, inquisitive, passionate
+kw_strg_event_reflect_th: 10
+kw_strg_thought_reflect_th: 9
+last_name: Mueller
+learned: Klaus Mueller is a student at Oak Hill College studying sociology. He is passionate about social justice and loves to explore different perspectives.
+lifestyle: Klaus Mueller goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.
+living_area: the Ville:Dorm for Oak Hill College:Klaus Mueller's room
+name: Klaus Mueller
+overlap_reflect_th: 4
+planned_path: []
+recency_decay: 0.99
+recency_w: 1
+relevance_w: 1
+retention: 8
+thought_count: 5
+vision_r: 8

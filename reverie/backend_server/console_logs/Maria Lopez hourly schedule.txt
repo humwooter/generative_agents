@@ -1,0 +1,14 @@
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine', 60]
+['attending physics classes', 120]
+['having lunch', 60]
+['studying at Hobbs Cafe', 180]
+['at the gym for a workout', 120]
+['having dinner', 60]
+['streaming on Twitch', 180]
+['winding down for the night and getting ready for bed', 60]
+['going to bed', 60]
+=== END OF TEXT ===============================================
+

@@ -1,0 +1,157 @@
+act_address: None
+act_description: None
+act_duration: None
+act_event: ('Maria Lopez', None, None)
+act_obj_description: None
+act_obj_event: (None, None, None)
+act_obj_pronunciatio: None
+act_path_set: False
+act_pronunciatio: None
+act_start_time: None
+age: 21
+att_bandwidth: 8
+chat: None
+chatting_end_time: None
+chatting_with: None
+chatting_with_buffer: {}
+concept_forget: 100
+curr_tile: (123, 57)
+curr_time: "2023-02-13 00:00:00"
+currently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.
+daily_plan_req: Maria Lopez spends at least 3 hours a day Twitch streaming or gaming.
+daily_reflection_size: 5
+daily_reflection_time: 180
+daily_req: [
+  "wake up and complete the morning routine at 9:00 am",
+  "attend physics classes from 10:00 am to 12:00 pm",
+  "have lunch at 12:30 pm",
+  "study at Hobbs Cafe from 1:00 pm to 3:00 pm",
+  "go to the gym for a workout from 3:30 pm to 5:00 pm",
+  "have dinner at 6:00 pm",
+  "stream on Twitch from 7:00 pm to 10:00 pm"
+]
+f_daily_schedule: [
+  [
+    "sleeping",
+    540
+  ],
+  [
+    "waking up and completing her morning routine (turning off her alarm and getting out of bed)",
+    5
+  ],
+  [
+    "waking up and completing her morning routine (stretching and doing some light exercises)",
+    10
+  ],
+  [
+    "waking up and completing her morning routine (taking a shower and getting dressed)",
+    20
+  ],
+  [
+    "waking up and completing her morning routine (making breakfast and eating)",
+    15
+  ],
+  [
+    "waking up and completing her morning routine (checking her schedule and making a to-do list for the day)",
+    10
+  ],
+  [
+    "attending physics classes",
+    120
+  ],
+  [
+    "having lunch",
+    60
+  ],
+  [
+    "studying at Hobbs Cafe",
+    180
+  ],
+  [
+    "at the gym for a workout",
+    120
+  ],
+  [
+    "having dinner",
+    60
+  ],
+  [
+    "streaming on Twitch",
+    180
+  ],
+  [
+    "winding down for the night and getting ready for bed",
+    60
+  ],
+  [
+    "going to bed",
+    60
+  ],
+  [
+    "sleeping",
+    0
+  ]
+]
+f_daily_schedule_hourly_org: [
+  [
+    "sleeping",
+    540
+  ],
+  [
+    "waking up and completing her morning routine",
+    60
+  ],
+  [
+    "attending physics classes",
+    120
+  ],
+  [
+    "having lunch",
+    60
+  ],
+  [
+    "studying at Hobbs Cafe",
+    180
+  ],
+  [
+    "at the gym for a workout",
+    120
+  ],
+  [
+    "having dinner",
+    60
+  ],
+  [
+    "streaming on Twitch",
+    180
+  ],
+  [
+    "winding down for the night and getting ready for bed",
+    60
+  ],
+  [
+    "going to bed",
+    60
+  ]
+]
+first_name: Maria
+importance_ele_n: 6
+importance_trigger_curr: 144
+importance_trigger_max: 150
+importance_w: 1
+innate: energetic, enthusiastic, inquisitive
+kw_strg_event_reflect_th: 10
+kw_strg_thought_reflect_th: 9
+last_name: Lopez
+learned: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.
+lifestyle: Maria Lopez goes to bed around 2am, awakes up around 9am, eats dinner around 6pm. She likes to hang out at Hobbs Cafe if it's before 6pm.
+living_area: the Ville:Dorm for Oak Hill College:Maria Lopez's room
+name: Maria Lopez
+overlap_reflect_th: 4
+planned_path: []
+recency_decay: 0.99
+recency_w: 1
+relevance_w: 1
+retention: 8
+thought_count: 5
+vision_r: 8

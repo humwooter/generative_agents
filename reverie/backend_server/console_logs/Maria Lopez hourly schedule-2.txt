@@ -1,0 +1,18 @@
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine (turning off her alarm and getting out of bed)', 5]
+['waking up and completing her morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing her morning routine (taking a shower and getting dressed)', 20]
+['waking up and completing her morning routine (making breakfast and eating)', 15]
+['waking up and completing her morning routine (checking her schedule and making a to-do list for the day)', 10]
+['attending physics classes', 120]
+['having lunch', 60]
+['studying at Hobbs Cafe', 180]
+['at the gym for a workout', 120]
+['having dinner', 60]
+['streaming on Twitch', 180]
+['winding down for the night and getting ready for bed', 60]
+['going to bed', 60]
+=== END OF TEXT ===============================================
+

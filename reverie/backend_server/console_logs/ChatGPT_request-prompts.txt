@@ -1,0 +1,123 @@
+
+=== START OF TEXT =============================================
+"""
+Convert an action description to an emoji (important: use two or less emojis).
+
+Action description: sleeping
+Emoji:
+"""
+Output the response to the prompt above in json. The value for the output must ONLY contain the emojis.
+Example output json:
+{"output": "🛁🧖‍♀️"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Task: We want to understand the state of an object that is being used by someone. 
+
+Let's think step by step. 
+We want to know about bed's state. 
+Step 1. Isabella Rodriguez is at/using the sleeping.
+Step 2. Describe the bed's state: bed is
+"""
+Output the response to the prompt above in json. The output should ONLY contain the phrase that should go in <fill in>.
+Example output json:
+{"output": "being fixed"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Convert an action description to an emoji (important: use two or less emojis).
+
+Action description: being slept on
+Emoji:
+"""
+Output the response to the prompt above in json. The value for the output must ONLY contain the emojis.
+Example output json:
+{"output": "🛁🧖‍♀️"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Convert an action description to an emoji (important: use two or less emojis).
+
+Action description: sleeping
+Emoji:
+"""
+Output the response to the prompt above in json. The value for the output must ONLY contain the emojis.
+Example output json:
+{"output": "🛁🧖‍♀️"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Task: We want to understand the state of an object that is being used by someone. 
+
+Let's think step by step. 
+We want to know about bed's state. 
+Step 1. Maria Lopez is at/using the sleeping.
+Step 2. Describe the bed's state: bed is
+"""
+Output the response to the prompt above in json. The output should ONLY contain the phrase that should go in <fill in>.
+Example output json:
+{"output": "being fixed"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Convert an action description to an emoji (important: use two or less emojis).
+
+Action description: being slept on
+Emoji:
+"""
+Output the response to the prompt above in json. The value for the output must ONLY contain the emojis.
+Example output json:
+{"output": "🛁🧖‍♀️"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Convert an action description to an emoji (important: use two or less emojis).
+
+Action description: sleeping
+Emoji:
+"""
+Output the response to the prompt above in json. The value for the output must ONLY contain the emojis.
+Example output json:
+{"output": "🛁🧖‍♀️"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Task: We want to understand the state of an object that is being used by someone. 
+
+Let's think step by step. 
+We want to know about bed's state. 
+Step 1. Klaus Mueller is at/using the sleeping.
+Step 2. Describe the bed's state: bed is
+"""
+Output the response to the prompt above in json. The output should ONLY contain the phrase that should go in <fill in>.
+Example output json:
+{"output": "being fixed"}
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+"""
+Convert an action description to an emoji (important: use two or less emojis).
+
+Action description: being slept on
+Emoji:
+"""
+Output the response to the prompt above in json. The value for the output must ONLY contain the emojis.
+Example output json:
+{"output": "🛁🧖‍♀️"}
+=== END OF TEXT ===============================================
+
