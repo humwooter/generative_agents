@@ -20,6 +20,9 @@ from utils import *
 #                    PERSONA Chapter 1: Prompt Structures                    #
 ##############################################################################
 
+# Global dictionary to track function calls
+function_call_tracker = {}
+
 def print_run_prompts(prompt_template=None, 
                       persona=None, 
                       gpt_param=None, 
@@ -86,6 +89,38 @@ def simple_write_to_file(filename: str, text: str):
                          text + \
                          "\n=== END OF TEXT ===============================================\n\n"
         file.write(formatted_text)
+
+def log_and_track_function_calls(function_name: str):
+    global function_call_tracker
+
+    # Update the function call count
+    if function_name in function_call_tracker:
+        function_call_tracker[function_name] += 1
+    else:
+        function_call_tracker[function_name] = 1
+
+    # Sort the dictionary by the number of calls, descending
+    sorted_function_calls = dict(sorted(function_call_tracker.items(), key=lambda item: item[1], reverse=True))
+
+    # Print the sorted dictionary in a more intuitive format
+    print("Function Call Frequencies:")
+    for func, count in sorted_function_calls.items():
+        print(f"Function '{func}' called {count} times")
+
+    # Path setup for log file
+    filename = "function_call_log.txt"
+    logs_dir = 'console_logs'
+    if not os.path.exists(logs_dir):
+        os.makedirs(logs_dir)
+
+    file_path = os.path.join(logs_dir, filename)
+    # Open the file in 'write' mode to erase previous contents and write the updated tracker
+    with open(file_path, 'w') as file:
+        # Writing the entire function call tracker to the file, sorted by frequency
+        file.write("Function Call Frequencies:\n")
+        for func, count in sorted_function_calls.items():
+            formatted_text = f"Function '{func}' called {count} times\n"
+            file.write(formatted_text)
 
 
 

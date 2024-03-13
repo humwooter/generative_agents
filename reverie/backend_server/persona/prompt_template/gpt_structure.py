@@ -13,13 +13,17 @@ from utils import *
 from persona.prompt_template.print_prompt import *
 
 
+# client = anthropic.Anthropic(
+#     api_key= anthropic_api_key
+# )
+
 openai.api_key = openai_api_key
 
 def temp_sleep(seconds=0.1):
   time.sleep(seconds)
 
 def ChatGPT_single_request(prompt):
-  simple_write_to_file("funcs_called.txt", "ChatGPT_single_request") # REMOVE LATER              
+  log_and_track_function_calls( "ChatGPT_single_request") # REMOVE LATER              
   temp_sleep()
 
   completion = openai.ChatCompletion.create(
@@ -34,7 +38,7 @@ def ChatGPT_single_request(prompt):
 # ============================================================================
 
 def GPT4_request(prompt): 
-  simple_write_to_file("funcs_called.txt", "GPT4_request") # REMOVE LATER            
+  log_and_track_function_calls( "GPT4_request") # REMOVE LATER            
   """
   Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
   server and returns the response. 
@@ -62,7 +66,7 @@ def GPT4_request(prompt):
 
 def ChatGPT_request(prompt):
   simple_write_to_file("ChatGPT_request-prompts.txt", prompt) # REMOVE LATER             
-  simple_write_to_file("funcs_called.txt", "ChatGPT_request") # REMOVE LATER            
+  log_and_track_function_calls( "ChatGPT_request") # REMOVE LATER            
   """
   Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
   server and returns the response. 
@@ -95,7 +99,7 @@ def GPT4_safe_generate_response(prompt,
                                    func_validate=None,
                                    func_clean_up=None,
                                    verbose=False): 
-  simple_write_to_file("funcs_called.txt", "GPT4_safe_generate_response") # REMOVE LATER            
+  log_and_track_function_calls( "GPT4_safe_generate_response") # REMOVE LATER            
   prompt = 'GPT-3 Prompt:\n"""\n' + prompt + '\n"""\n'
   prompt += f"Output the response to the prompt above in json. {special_instruction}\n"
   prompt += "Example output json:\n"
@@ -138,7 +142,7 @@ def ChatGPT_safe_generate_response(prompt,
                                    func_validate=None,
                                    func_clean_up=None,
                                    verbose=False): 
-  simple_write_to_file("funcs_called.txt", "ChatGPT_safe_generate_response") # REMOVE LATER            
+  log_and_track_function_calls( "ChatGPT_safe_generate_response") # REMOVE LATER            
   prompt = '"""\n' + prompt + '\n"""\n'
   prompt += f"Output the response to the prompt above in json. {special_instruction}\n"
   prompt += "Example output json:\n"
@@ -175,7 +179,7 @@ def ChatGPT_safe_generate_response_OLD(prompt,
                                    func_validate=None,
                                    func_clean_up=None,
                                    verbose=False): 
-  simple_write_to_file("funcs_called.txt", "ChatGPT_safe_generate_response_OLD") # REMOVE LATER            
+  log_and_track_function_calls( "ChatGPT_safe_generate_response_OLD") # REMOVE LATER            
   if verbose: 
     #print ("CHAT GPT PROMPT")
     #print (prompt)
@@ -204,7 +208,81 @@ def ChatGPT_safe_generate_response_OLD(prompt,
 # ###################[SECTION 2: ORIGINAL GPT-3 STRUCTURE] ###################
 # ============================================================================
 
+
+
+def Claude_request(prompt, parameters):
+  log_and_track_function_calls("Claude_request")
+  save_gpt_prompt_to_file("Claude_request-prompts.txt", parameters, prompt)
+  
+
+  # Map the gpt_parameter dictionary to Claude's parameters
+  model =  "claude-3-opus-20240229"  # Default to a model if not specified
+  max_tokens = parameters.get("max_tokens", 1000)
+  temperature = parameters.get("temperature", 0)  # Claude's default temperature if not specified
+  # Add additional mappings as necessary
+
+  try:
+      # Creating the message with Claude
+      message = client.messages.create(
+          model=model,
+          max_tokens=max_tokens,
+          temperature=temperature,
+          system=prompt,  # Directly use the 'prompt' as the 'system' input for Claude
+          messages=[
+              {
+                  "role": "user",
+                  "content": [
+                      {
+                          "type": "text",
+                          "text": prompt
+                      }
+                  ]
+              }
+          ]
+      )
+      # Assuming 'message.content' holds the response text
+      return message.content
+  except Exception as e:
+      print(f"An error occurred: {e}")
+      return "Request failed"
+
+
+def LLM_request(prompt, llm_parameters, url="http://169.231.53.160:1234/v1/completions", model_name="TheBloke_Llama-2-7B-fp16"):
+  import requests
+  log_and_track_function_calls( "LLM_request")
+  save_gpt_prompt_to_file("LLM_request-prompts.txt", llm_parameters, prompt)
+  
+  # Setting headers for the request
+  headers = {
+      "Content-Type": "application/json"
+  }
+  
+  # Preparing the data payload for the request, including all LLM parameters and optional model name
+  data = {
+      "prompt": prompt,
+      "model": model_name,  # Use the model name if specified
+      "max_tokens": llm_parameters.get("max_tokens", 200),
+      "temperature": llm_parameters.get("temperature", 1.0),
+      "top_p": llm_parameters.get("top_p", 1.0),
+      "frequency_penalty": llm_parameters.get("frequency_penalty", 0),
+      "presence_penalty": llm_parameters.get("presence_penalty", 0),
+      "stream": llm_parameters.get("stream", False),
+      "stop": llm_parameters.get("stop", None)
+  }
+  
+  try:
+      # Sending the request to the specified LLM server URL
+      response = requests.post(url, headers=headers, json=data, verify=False)
+      # Parsing the response
+      response_data = response.json()
+      return response_data['choices'][0]['text']
+  except Exception as e:
+      print(f"An error occurred: {e}")
+      return "Request failed"
+
+
 def GPT_request(prompt, gpt_parameter):
+  log_and_track_function_calls( "GPT_request")
   save_gpt_prompt_to_file("GPT_request-prompts.txt", gpt_parameter, prompt)        
   """
   Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
@@ -217,12 +295,6 @@ def GPT_request(prompt, gpt_parameter):
   RETURNS: 
     a str of GPT-3's response. 
   """
-  #print"entered GPT_request")
-  #print)
-  #print"prompt is: ", prompt)
-  #print)
-  #print"gpt_parameter is: ", gpt_parameter)
-
   temp_sleep()
   try: 
     response = openai.Completion.create(
@@ -237,12 +309,12 @@ def GPT_request(prompt, gpt_parameter):
                 stop=gpt_parameter["stop"],)
     return response.choices[0].text
   except: 
-    #print ("TOKEN LIMIT EXCEEDED")
     return "TOKEN LIMIT EXCEEDED"
+  
 
 
 def generate_prompt(curr_input, prompt_lib_file):
-  simple_write_to_file("funcs_called.txt", "generate_prompt") # REMOVE LATER             
+  log_and_track_function_calls( "generate_prompt") # REMOVE LATER             
 
   """
   Takes in the current input (e.g. comment that you want to classifiy) and 
@@ -280,7 +352,7 @@ def safe_generate_response(prompt,
                            verbose=False):
  
   if verbose: 
-    simple_write_to_file("funcs_called.txt", "safe_generate_response") # REMOVE LATER             
+    log_and_track_function_calls( "safe_generate_response") # REMOVE LATER             
     write_to_file_in_console_logs(filename="prompts.txt", text=prompt)
 
 
@@ -298,7 +370,7 @@ def safe_generate_response(prompt,
 
 
 def get_embedding(text, model="text-embedding-ada-002"):
-  simple_write_to_file("funcs_called.txt", "get_embedding") # REMOVE LATER             
+  log_and_track_function_calls( "get_embedding") # REMOVE LATER             
   text = text.replace("\n", " ")
   if not text: 
     text = "this is blank"

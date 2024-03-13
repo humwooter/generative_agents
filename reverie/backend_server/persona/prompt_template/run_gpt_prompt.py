@@ -37,7 +37,7 @@ def get_random_alphanumeric(i=6, j=6):
 ##############################################################################
 
 def run_gpt_prompt_wake_up_hour(persona, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_wake_up_hour") # REMOVE LATER
+  log_and_track_function_calls( "run_gpt_prompt_wake_up_hour") # REMOVE LATER
   """
   Given the persona, returns an integer that indicates the hour when the 
   persona wakes up.  
@@ -101,7 +101,7 @@ def run_gpt_prompt_daily_plan(persona,
   OUTPUT: 
     a list of daily actions in broad strokes.
   """
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_daily_plan") # REMOVE LATER
+  log_and_track_function_calls( "run_gpt_prompt_daily_plan") # REMOVE LATER
 
   def create_prompt_input(persona, wake_up_hour, test_input=None):
     if test_input: return test_input
@@ -168,7 +168,7 @@ def run_gpt_prompt_generate_hourly_schedule(persona,
                                             intermission2=None,
                                             test_input=None, 
                                             verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_generate_hourly_schedule") # REMOVE LATER
+  log_and_track_function_calls( "run_gpt_prompt_generate_hourly_schedule") # REMOVE LATER
   def create_prompt_input(persona, 
                           curr_hour_str, 
                           p_f_ds_hourly_org,
@@ -269,7 +269,7 @@ def run_gpt_prompt_task_decomp(persona,
                                duration, 
                                test_input=None, 
                                verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_task_decomp") # REMOVE LATER
+  log_and_track_function_calls( "run_gpt_prompt_task_decomp") # REMOVE LATER
   def create_prompt_input(persona, task, duration, test_input=None):
 
     """
@@ -470,7 +470,7 @@ def run_gpt_prompt_action_sector(action_description,
                                 maze, 
                                 test_input=None, 
                                 verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_action_sector") # REMOVE LATER
+  log_and_track_function_calls( "run_gpt_prompt_action_sector") # REMOVE LATER
   def create_prompt_input(action_description, persona, maze, test_input=None):
     persona_filename = persona.scratch.name + "-persona.txt" ######
     write_class_to_console_logs(persona.scratch, persona_filename)
@@ -589,7 +589,7 @@ def run_gpt_prompt_action_arena(action_description,
                                 maze, act_world, act_sector,
                                 test_input=None, 
                                 verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_action_arena") # REMOVE LATER
+  log_and_track_function_calls( "run_gpt_prompt_action_arena") # REMOVE LATER
   def create_prompt_input(action_description, persona, maze, act_world, act_sector, test_input=None): 
     prompt_input = []
     # prompt_input += [persona.scratch.get_str_name()]
@@ -686,7 +686,7 @@ def run_gpt_prompt_action_game_object(action_description,
                                       temp_address,
                                       test_input=None, 
                                       verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_action_game_object") # REMOVE LATER
+  log_and_track_function_calls( "run_gpt_prompt_action_game_object") # REMOVE LATER
   def create_prompt_input(action_description, 
                           persona, 
                           temp_address, 
@@ -741,7 +741,7 @@ def run_gpt_prompt_action_game_object(action_description,
 
 
 def run_gpt_prompt_pronunciatio(action_description, persona, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_pronunciatio") # REMOVE LATER 
+  log_and_track_function_calls( "run_gpt_prompt_pronunciatio") # REMOVE LATER 
   def create_prompt_input(action_description): 
     if "(" in action_description: 
       action_description = action_description.split("(")[-1].split(")")[0]
@@ -800,7 +800,7 @@ def run_gpt_prompt_pronunciatio(action_description, persona, verbose=False):
 
 
 def run_gpt_prompt_event_triple(action_description, persona, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_event_triple") # REMOVE LATER 
+  log_and_track_function_calls( "run_gpt_prompt_event_triple") # REMOVE LATER 
   def create_prompt_input(action_description, persona): 
     if "(" in action_description: 
       action_description = action_description.split("(")[-1].split(")")[0]
@@ -846,7 +846,7 @@ def run_gpt_prompt_event_triple(action_description, persona, verbose=False):
 
 
 def run_gpt_prompt_act_obj_desc(act_game_object, act_desp, persona, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_act_obj_desc") # REMOVE LATER 
+  log_and_track_function_calls( "run_gpt_prompt_act_obj_desc") # REMOVE LATER 
   # print("ENTERED ", run_gpt_prompt_act_obj_desc)
   def create_prompt_input(act_game_object, act_desp, persona): 
     prompt_input = [act_game_object, 
@@ -908,7 +908,7 @@ def run_gpt_prompt_act_obj_desc(act_game_object, act_desp, persona, verbose=Fals
 
 
 def run_gpt_prompt_act_obj_event_triple(act_game_object, act_obj_desc, persona, verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_act_obj_event_triple") # REMOVE LATER 
+  log_and_track_function_calls( "run_gpt_prompt_act_obj_event_triple") # REMOVE LATER 
   def create_prompt_input(act_game_object, act_obj_desc): 
     prompt_input = [act_game_object, 
                     act_obj_desc,
@@ -962,7 +962,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
                                        inserted_act_dur,
                                        test_input=None, 
                                        verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_new_decomp_schedule") # REMOVE LATER  
+  log_and_track_function_calls( "run_gpt_prompt_new_decomp_schedule") # REMOVE LATER  
   def create_prompt_input(persona, 
                            main_act_dur, 
                            truncated_act_dur, 
@@ -1110,7 +1110,7 @@ def run_gpt_prompt_new_decomp_schedule(persona,
 
 def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved,test_input=None, 
                                        verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_decide_to_talk") # REMOVE LATER  
+  log_and_track_function_calls( "run_gpt_prompt_decide_to_talk") # REMOVE LATER  
   def create_prompt_input(init_persona, target_persona, retrieved, 
                           test_input=None): 
     last_chat = init_persona.a_mem.get_last_chat(target_persona.name)
@@ -1211,7 +1211,7 @@ def run_gpt_prompt_decide_to_talk(persona, target_persona, retrieved,test_input=
 
 def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved,test_input=None, 
                                        verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_decide_to_react") # REMOVE LATER  
+  log_and_track_function_calls( "run_gpt_prompt_decide_to_react") # REMOVE LATER  
   def create_prompt_input(init_persona, target_persona, retrieved, 
                           test_input=None): 
 
@@ -1309,7 +1309,7 @@ def run_gpt_prompt_decide_to_react(persona, target_persona, retrieved,test_input
 
 def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
                                        test_input=None, verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_create_conversation") # REMOVE LATER   
+  log_and_track_function_calls( "run_gpt_prompt_create_conversation") # REMOVE LATER   
   def create_prompt_input(init_persona, target_persona, curr_loc, 
                           test_input=None): 
 
@@ -1434,7 +1434,7 @@ def run_gpt_prompt_create_conversation(persona, target_persona, curr_loc,
 
 
 def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_summarize_conversation") # REMOVE LATER   
+  log_and_track_function_calls( "run_gpt_prompt_summarize_conversation") # REMOVE LATER   
   def create_prompt_input(conversation, test_input=None): 
     convo_str = ""
     for row in conversation: 
@@ -1488,7 +1488,7 @@ def run_gpt_prompt_summarize_conversation(persona, conversation, test_input=None
 
 
 def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_extract_keywords") # REMOVE LATER    
+  log_and_track_function_calls( "run_gpt_prompt_extract_keywords") # REMOVE LATER    
   def create_prompt_input(description, test_input=None): 
     if "\n" in description: 
       description = description.replace("\n", " <LINE_BREAK> ")
@@ -1543,7 +1543,7 @@ def run_gpt_prompt_extract_keywords(persona, description, test_input=None, verbo
 
 
 def run_gpt_prompt_keyword_to_thoughts(persona, keyword, concept_summary, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_keyword_to_thoughts") # REMOVE LATER    
+  log_and_track_function_calls( "run_gpt_prompt_keyword_to_thoughts") # REMOVE LATER    
   def create_prompt_input(persona, keyword, concept_summary, test_input=None): 
     prompt_input = [keyword, concept_summary, persona.name]
     return prompt_input
@@ -1586,7 +1586,7 @@ def run_gpt_prompt_convo_to_thoughts(persona,
                                     target_persona_name,
                                     convo_str,
                                     fin_target, test_input=None, verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_convo_to_thoughts") # REMOVE LATER     
+  log_and_track_function_calls( "run_gpt_prompt_convo_to_thoughts") # REMOVE LATER     
   def create_prompt_input(init_persona_name,  
                                     target_persona_name,
                                     convo_str,
@@ -1635,7 +1635,7 @@ def run_gpt_prompt_convo_to_thoughts(persona,
 
 
 def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_event_poignancy") # REMOVE LATER     
+  log_and_track_function_calls( "run_gpt_prompt_event_poignancy") # REMOVE LATER     
   def create_prompt_input(persona, event_description, test_input=None): 
     prompt_input = [persona.scratch.name,
                     persona.scratch.get_str_iss(),
@@ -1689,7 +1689,7 @@ def run_gpt_prompt_event_poignancy(persona, event_description, test_input=None, 
 
 
 def run_gpt_prompt_thought_poignancy(persona, event_description, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_thought_poignancy") # REMOVE LATER     
+  log_and_track_function_calls( "run_gpt_prompt_thought_poignancy") # REMOVE LATER     
   def create_prompt_input(persona, event_description, test_input=None): 
     prompt_input = [persona.scratch.name,
                     persona.scratch.get_str_iss(),
@@ -1745,7 +1745,7 @@ def run_gpt_prompt_thought_poignancy(persona, event_description, test_input=None
 
 
 def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_chat_poignancy") # REMOVE LATER     
+  log_and_track_function_calls( "run_gpt_prompt_chat_poignancy") # REMOVE LATER     
   def create_prompt_input(persona, event_description, test_input=None): 
     prompt_input = [persona.scratch.name,
                     persona.scratch.get_str_iss(),
@@ -1797,7 +1797,7 @@ def run_gpt_prompt_chat_poignancy(persona, event_description, test_input=None, v
 
 
 def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=False):
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_focal_pt") # REMOVE LATER      
+  log_and_track_function_calls( "run_gpt_prompt_focal_pt") # REMOVE LATER      
   def create_prompt_input(persona, statements, n, test_input=None): 
     prompt_input = [statements, str(n)]
     return prompt_input
@@ -1871,7 +1871,7 @@ def run_gpt_prompt_focal_pt(persona, statements, n, test_input=None, verbose=Fal
 
   
 def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_insight_and_guidance") # REMOVE LATER        
+  log_and_track_function_calls( "run_gpt_prompt_insight_and_guidance") # REMOVE LATER        
   def create_prompt_input(persona, statements, n, test_input=None): 
     prompt_input = [statements, str(n)]
     return prompt_input
@@ -1926,7 +1926,7 @@ def run_gpt_prompt_insight_and_guidance(persona, statements, n, test_input=None,
 
 
 def run_gpt_prompt_agent_chat_summarize_ideas(persona, target_persona, statements, curr_context, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_agent_chat_summarize_ideas") # REMOVE LATER        
+  log_and_track_function_calls( "run_gpt_prompt_agent_chat_summarize_ideas") # REMOVE LATER        
   def create_prompt_input(persona, target_persona, statements, curr_context, test_input=None): 
     prompt_input = [persona.scratch.get_str_curr_date_str(), curr_context, persona.scratch.currently, 
                     statements, persona.scratch.name, target_persona.scratch.name]
@@ -1974,7 +1974,7 @@ def run_gpt_prompt_agent_chat_summarize_ideas(persona, target_persona, statement
   
 
 def run_gpt_prompt_agent_chat_summarize_relationship(persona, target_persona, statements, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_agent_chat_summarize_relationship") # REMOVE LATER        
+  log_and_track_function_calls( "run_gpt_prompt_agent_chat_summarize_relationship") # REMOVE LATER        
   def create_prompt_input(persona, target_persona, statements, test_input=None): 
     prompt_input = [statements, persona.scratch.name, target_persona.scratch.name]
     return prompt_input
@@ -2046,7 +2046,7 @@ def run_gpt_prompt_agent_chat(maze, persona, target_persona,
                                curr_context, 
                                init_summ_idea, 
                                target_summ_idea, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_agent_chat") # REMOVE LATER      
+  log_and_track_function_calls( "run_gpt_prompt_agent_chat") # REMOVE LATER      
   def create_prompt_input(persona, target_persona, curr_context, init_summ_idea, target_summ_idea, test_input=None): 
     prev_convo_insert = "\n"
     if persona.a_mem.seq_chat: 
@@ -2246,7 +2246,7 @@ def run_gpt_prompt_generate_next_convo_line(persona, interlocutor_desc, prev_con
 
 
 def run_gpt_prompt_generate_whisper_inner_thought(persona, whisper, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_generate_whisper_inner_thought") # REMOVE LATER        
+  log_and_track_function_calls( "run_gpt_prompt_generate_whisper_inner_thought") # REMOVE LATER        
   def create_prompt_input(persona, whisper, test_input=None): 
     prompt_input = [persona.scratch.name, whisper]
     return prompt_input
@@ -2284,7 +2284,7 @@ def run_gpt_prompt_generate_whisper_inner_thought(persona, whisper, test_input=N
 
 
 def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_planning_thought_on_convo") # REMOVE LATER          
+  log_and_track_function_calls( "run_gpt_prompt_planning_thought_on_convo") # REMOVE LATER          
   def create_prompt_input(persona, all_utt, test_input=None): 
     prompt_input = [all_utt, persona.scratch.name, persona.scratch.name, persona.scratch.name]
     return prompt_input
@@ -2322,7 +2322,7 @@ def run_gpt_prompt_planning_thought_on_convo(persona, all_utt, test_input=None, 
 
 
 def run_gpt_prompt_memo_on_convo(persona, all_utt, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_prompt_memo_on_convo") # REMOVE LATER          
+  log_and_track_function_calls( "run_gpt_prompt_memo_on_convo") # REMOVE LATER          
   def create_prompt_input(persona, all_utt, test_input=None): 
     prompt_input = [all_utt, persona.scratch.name, persona.scratch.name, persona.scratch.name]
     return prompt_input
@@ -2390,7 +2390,7 @@ def run_gpt_prompt_memo_on_convo(persona, all_utt, test_input=None, verbose=Fals
 
 
 def run_gpt_generate_safety_score(persona, comment, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_generate_safety_score") # REMOVE LATER            
+  log_and_track_function_calls( "run_gpt_generate_safety_score") # REMOVE LATER            
   def create_prompt_input(comment, test_input=None):
     prompt_input = [comment]
     return prompt_input
@@ -2432,7 +2432,7 @@ def run_gpt_generate_safety_score(persona, comment, test_input=None, verbose=Fal
 
 
 def extract_first_json_dict(data_str):
-  simple_write_to_file("funcs_called.txt", "extract_first_json_dict") # REMOVE LATER            
+  log_and_track_function_calls( "extract_first_json_dict") # REMOVE LATER            
   # Find the first occurrence of a JSON object within the string
   start_idx = data_str.find('{')
   end_idx = data_str.find('}', start_idx) + 1
@@ -2454,7 +2454,7 @@ def extract_first_json_dict(data_str):
 
 
 def run_gpt_generate_iterative_chat_utt(maze, init_persona, target_persona, retrieved, curr_context, curr_chat, test_input=None, verbose=False): 
-  simple_write_to_file("funcs_called.txt", "run_gpt_generate_iterative_chat_utt") # REMOVE LATER            
+  log_and_track_function_calls( "run_gpt_generate_iterative_chat_utt") # REMOVE LATER            
 
   def create_prompt_input(maze, init_persona, target_persona, retrieved, curr_context, curr_chat, test_input=None):
     persona = init_persona
