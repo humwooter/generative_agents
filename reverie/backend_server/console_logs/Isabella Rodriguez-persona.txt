@@ -23,10 +23,12 @@ daily_reflection_size: 5
 daily_reflection_time: 180
 daily_req: [
   "wake up and complete the morning routine at 6:00 am",
-  "arrive at Hobbs Cafe and open at 8:00 am",
-  "work at the counter until 8:00 pm",
-  "have dinner at 8:30 pm",
-  "prepare for the Valentine's Day party at Hobbs Cafe tomorrow and gather party materials"
+  "head to Hobbs Cafe at 8:00 am",
+  "spend the morning prepping the cafe for the Valentine's Day party tomorrow, such as decorating and finalizing the menu",
+  "take a break at 12:00 pm for lunch",
+  "continue prepping for the party until 5:00 pm, when she closes the cafe",
+  "go home and have dinner at 7:00 pm",
+  "spend the evening relaxing and watching TV until 10:00 pm"
 ]
 f_daily_schedule: [
   [
@@ -42,8 +44,8 @@ f_daily_schedule: [
     10
   ],
   [
-    "waking up and completing her morning routine (changing into her work clothes)",
-    5
+    "waking up and completing her morning routine (getting dressed for the day)",
+    10
   ],
   [
     "waking up and completing her morning routine (making breakfast)",
@@ -58,63 +60,67 @@ f_daily_schedule: [
     5
   ],
   [
-    "waking up and completing her morning routine (packing her bag for work)",
+    "waking up and completing her morning routine (packing her bag with any necessary items for the day)",
     5
   ],
   [
-    "waking up and completing her morning routine (putting on her shoes and coat)",
-    5
-  ],
-  [
-    "getting ready for work and leaves for Hobbs Cafe",
+    "heading to Hobbs Cafe to start her day",
     60
   ],
   [
-    "opening Hobbs Cafe and starting her work day",
+    "at Hobbs Cafe, prepping for the Valentine's Day party tomorrow",
     60
   ],
   [
-    "working at the counter and preparing for the Valentine's Day party",
+    "prepping for the Valentine's Day party by decorating the cafe and finalizing the menu",
     60
   ],
   [
-    "still working at the counter and preparing for the Valentine's Day party",
-    180
-  ],
-  [
-    "taking a break for lunch",
+    "taking a break to have lunch",
     60
   ],
   [
-    "back at work and continuing to prepare for the Valentine's Day party",
+    "finishing up the final details for the party and making sure everything is ready for tomorrow",
     60
   ],
   [
-    "still working at the counter and preparing for the Valentine's Day party",
-    180
+    "taking a break to have lunch",
+    120
   ],
   [
-    "having dinner",
+    "finishing up the final details for the party and making sure everything is ready for tomorrow",
     60
   ],
   [
-    "preparing for the Valentine's Day party and gathering party materials",
+    "taking a break to have a cup of coffee and chat with customers",
     60
   ],
   [
-    "closing Hobbs Cafe and heading home",
+    "taking a break to have a snack and check on the party preparations",
     60
   ],
   [
-    "still preparing for the Valentine's Day party and gathering party materials",
+    "closing Hobbs Cafe for the day",
     60
   ],
   [
-    "finishing up preparations for the Valentine's Day party and getting ready for bed",
+    "heading home to have dinner",
     60
   ],
   [
-    "going to bed at 11:00 pm to get a good night's rest before the Valentine's Day party tomorrow",
+    "having dinner at home and watching TV",
+    60
+  ],
+  [
+    "spending time with loved ones and discussing final preparations for the party tomorrow",
+    60
+  ],
+  [
+    "getting ready for bed and setting her alarm for 6:00 am tomorrow morning",
+    120
+  ],
+  [
+    "going to bed to get a good night's rest before the busy day tomorrow",
     60
   ],
   [
@@ -132,55 +138,63 @@ f_daily_schedule_hourly_org: [
     60
   ],
   [
-    "getting ready for work and leaves for Hobbs Cafe",
+    "heading to Hobbs Cafe to start her day",
     60
   ],
   [
-    "opening Hobbs Cafe and starting her work day",
+    "at Hobbs Cafe, prepping for the Valentine's Day party tomorrow",
     60
   ],
   [
-    "working at the counter and preparing for the Valentine's Day party",
+    "prepping for the Valentine's Day party by decorating the cafe and finalizing the menu",
     60
   ],
   [
-    "still working at the counter and preparing for the Valentine's Day party",
-    180
-  ],
-  [
-    "taking a break for lunch",
+    "taking a break to have lunch",
     60
   ],
   [
-    "back at work and continuing to prepare for the Valentine's Day party",
+    "finishing up the final details for the party and making sure everything is ready for tomorrow",
     60
   ],
   [
-    "still working at the counter and preparing for the Valentine's Day party",
-    180
+    "taking a break to have lunch",
+    120
   ],
   [
-    "having dinner",
+    "finishing up the final details for the party and making sure everything is ready for tomorrow",
     60
   ],
   [
-    "preparing for the Valentine's Day party and gathering party materials",
+    "taking a break to have a cup of coffee and chat with customers",
     60
   ],
   [
-    "closing Hobbs Cafe and heading home",
+    "taking a break to have a snack and check on the party preparations",
     60
   ],
   [
-    "still preparing for the Valentine's Day party and gathering party materials",
+    "closing Hobbs Cafe for the day",
     60
   ],
   [
-    "finishing up preparations for the Valentine's Day party and getting ready for bed",
+    "heading home to have dinner",
     60
   ],
   [
-    "going to bed at 11:00 pm to get a good night's rest before the Valentine's Day party tomorrow",
+    "having dinner at home and watching TV",
+    60
+  ],
+  [
+    "spending time with loved ones and discussing final preparations for the party tomorrow",
+    60
+  ],
+  [
+    "getting ready for bed and setting her alarm for 6:00 am tomorrow morning",
+    120
+  ],
+  [
+    "going to bed to get a good night's rest before the busy day tomorrow",
     60
   ]
 ]

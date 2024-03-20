@@ -70,3 +70,565 @@
 10) Klaus is washing his dishes. (duration in minutes: 5, minutes left: 0)
 === END OF TEXT ===============================================
 
+
+=== START OF TEXT =============================================
+TOKEN LIMIT EXCEEDED
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+TOKEN LIMIT EXCEEDED
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and stretching. (duration in minutes: 5, minutes left: 55)
+2) Isabella is checking her phone for any urgent messages. (duration in minutes: 5, minutes left: 50)
+3) Isabella is getting out of bed and making her bed. (duration in minutes: 10, minutes left: 40)
+4) Isabella is taking a shower. (duration in minutes: 15, minutes left: 25)
+5) Isabella is getting dressed. (duration in minutes: 10, minutes left: 15)
+6) Isabella is making breakfast. (duration in minutes: 15, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and stretching. (duration in minutes: 5, minutes left: 55)
+2) Isabella is checking her phone for any urgent messages. (duration in minutes: 5, minutes left: 50)
+3) Isabella is getting out of bed and making her bed. (duration in minutes: 10, minutes left: 40)
+4) Isabella is taking a shower. (duration in minutes: 15, minutes left: 25)
+5) Isabella is getting dressed. (duration in minutes: 10, minutes left: 15)
+6) Isabella is making breakfast. (duration in minutes: 15, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting dressed in her athletic gear. (duration in minutes: 10, minutes left: 110)
+2) Maria is stretching and warming up her muscles. (duration in minutes: 15, minutes left: 95)
+3) Maria is starting her run at a moderate pace. (duration in minutes: 10, minutes left: 85)
+4) Maria is increasing her speed and intensity. (duration in minutes: 10, minutes left: 75)
+5) Maria is focusing on her breathing and form. (duration in minutes: 10, minutes left: 65)
+6) Maria is taking a water break. (duration in minutes: 5, minutes left: 60)
+7) Maria is continuing her run at a faster pace. (duration in minutes: 10, minutes left: 50)
+8) Maria is incorporating sprints and intervals into her run. (duration in minutes: 15, minutes left: 35)
+9) Maria is cooling down and stretching her muscles. (duration in minutes: 10, minutes left: 25)
+10) Maria is hydrating and refueling with a protein shake. (duration in minutes: 10, minutes left: 15)
+11) Maria is showering and changing into her school clothes. (duration in minutes: 15, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting dressed in her athletic gear. (duration in minutes: 10, minutes left: 110)
+2) Maria is stretching and warming up her muscles. (duration in minutes: 15, minutes left: 95)
+3) Maria is starting her run at a moderate pace. (duration in minutes: 10, minutes left: 85)
+4) Maria is increasing her speed and intensity. (duration in minutes: 10, minutes left: 75)
+5) Maria is focusing on her breathing and form. (duration in minutes: 10, minutes left: 65)
+6) Maria is taking a water break. (duration in minutes: 5, minutes left: 60)
+7) Maria is continuing her run at a faster pace. (duration in minutes: 10, minutes left: 50)
+8) Maria is incorporating sprints and intervals into her run. (duration in minutes: 15, minutes left: 35)
+9) Maria is cooling down and stretching her muscles. (duration in minutes: 10, minutes left: 25)
+10) Maria is hydrating and refueling with a protein shake. (duration in minutes: 10, minutes left: 15)
+11) Maria is showering and changing into her school clothes. (duration in minutes: 15, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and stretching. (duration in minutes: 5, minutes left: 55)
+2) Klaus is taking a shower. (duration in minutes: 10, minutes left: 45)
+3) Klaus is getting dressed. (duration in minutes: 5, minutes left: 40)
+4) Klaus is making breakfast. (duration in minutes: 15, minutes left: 25)
+5) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 15)
+6) Klaus is washing dishes. (duration in minutes: 5, minutes left: 10)
+7) Klaus is packing his bag for work. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and stretching. (duration in minutes: 5, minutes left: 55)
+2) Klaus is taking a shower. (duration in minutes: 10, minutes left: 45)
+3) Klaus is getting dressed. (duration in minutes: 5, minutes left: 40)
+4) Klaus is making breakfast. (duration in minutes: 15, minutes left: 25)
+5) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 15)
+6) Klaus is washing dishes. (duration in minutes: 5, minutes left: 10)
+7) Klaus is packing his bag for work. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Isabella is stretching and getting out of bed. (duration in minutes: 5, minutes left: 54)
+3) Isabella is washing her face and brushing her teeth. (duration in minutes: 10, minutes left: 44)
+4) Isabella is getting dressed. (duration in minutes: 10, minutes left: 34)
+5) Isabella is making her bed. (duration in minutes: 5, minutes left: 29)
+6) Isabella is checking her phone for any urgent messages. (duration in minutes: 5, minutes left: 24)
+7) Isabella is making breakfast. (duration in minutes: 15, minutes left: 9)
+8) Isabella is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Isabella is stretching and getting out of bed. (duration in minutes: 5, minutes left: 54)
+3) Isabella is washing her face and brushing her teeth. (duration in minutes: 10, minutes left: 44)
+4) Isabella is getting dressed. (duration in minutes: 10, minutes left: 34)
+5) Isabella is making her bed. (duration in minutes: 5, minutes left: 29)
+6) Isabella is checking her phone for any urgent messages. (duration in minutes: 5, minutes left: 24)
+7) Isabella is making breakfast. (duration in minutes: 15, minutes left: 9)
+8) Isabella is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Maria is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Maria is getting out of bed. (duration in minutes: 2, minutes left: 52)
+4) Maria is making her bed. (duration in minutes: 3, minutes left: 49)
+5) Maria is using the bathroom. (duration in minutes: 5, minutes left: 44)
+6) Maria is taking a shower. (duration in minutes: 15, minutes left: 29)
+7) Maria is getting dressed. (duration in minutes: 5, minutes left: 24)
+8) Maria is doing her hair and makeup. (duration in minutes: 10, minutes left: 14)
+9) Maria is making breakfast. (duration in minutes: 10, minutes left: 4)
+10) Maria is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Maria is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Maria is getting out of bed. (duration in minutes: 2, minutes left: 52)
+4) Maria is making her bed. (duration in minutes: 3, minutes left: 49)
+5) Maria is using the bathroom. (duration in minutes: 5, minutes left: 44)
+6) Maria is taking a shower. (duration in minutes: 15, minutes left: 29)
+7) Maria is getting dressed. (duration in minutes: 5, minutes left: 24)
+8) Maria is doing her hair and makeup. (duration in minutes: 10, minutes left: 14)
+9) Maria is making breakfast. (duration in minutes: 10, minutes left: 4)
+10) Maria is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and getting out of bed. (duration in minutes: 5, minutes left: 50)
+3) Klaus is making his bed. (duration in minutes: 5, minutes left: 45)
+4) Klaus is using the bathroom and washing his face. (duration in minutes: 10, minutes left: 35)
+5) Klaus is brushing his teeth. (duration in minutes: 5, minutes left: 30)
+6) Klaus is taking a shower. (duration in minutes: 15, minutes left: 15)
+7) Klaus is getting dressed. (duration in minutes: 10, minutes left: 5)
+8) Klaus is making breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and getting out of bed. (duration in minutes: 5, minutes left: 50)
+3) Klaus is making his bed. (duration in minutes: 5, minutes left: 45)
+4) Klaus is using the bathroom and washing his face. (duration in minutes: 10, minutes left: 35)
+5) Klaus is brushing his teeth. (duration in minutes: 5, minutes left: 30)
+6) Klaus is taking a shower. (duration in minutes: 15, minutes left: 15)
+7) Klaus is getting dressed. (duration in minutes: 10, minutes left: 5)
+8) Klaus is making breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and stretching. (duration in minutes: 5, minutes left: 55)
+2) Isabella is brushing her teeth. (duration in minutes: 3, minutes left: 52)
+3) Isabella is washing her face. (duration in minutes: 2, minutes left: 50)
+4) Isabella is getting dressed. (duration in minutes: 5, minutes left: 45)
+5) Isabella is making her bed. (duration in minutes: 5, minutes left: 40)
+6) Isabella is checking her phone for any urgent messages. (duration in minutes: 5, minutes left: 35)
+7) Isabella is making breakfast. (duration in minutes: 10, minutes left: 25)
+8) Isabella is eating breakfast. (duration in minutes: 10, minutes left: 15)
+9) Isabella is packing her bag for the day. (duration in minutes: 5, minutes left: 10)
+10) Isabella is checking the weather and choosing appropriate clothing. (duration in minutes: 5, minutes left: 5)
+11) Isabella is leaving for Hobbs Cafe. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and stretching. (duration in minutes: 5, minutes left: 55)
+2) Isabella is brushing her teeth. (duration in minutes: 3, minutes left: 52)
+3) Isabella is washing her face. (duration in minutes: 2, minutes left: 50)
+4) Isabella is getting dressed. (duration in minutes: 5, minutes left: 45)
+5) Isabella is making her bed. (duration in minutes: 5, minutes left: 40)
+6) Isabella is checking her phone for any urgent messages. (duration in minutes: 5, minutes left: 35)
+7) Isabella is making breakfast. (duration in minutes: 10, minutes left: 25)
+8) Isabella is eating breakfast. (duration in minutes: 10, minutes left: 15)
+9) Isabella is packing her bag for the day. (duration in minutes: 5, minutes left: 10)
+10) Isabella is checking the weather and choosing appropriate clothing. (duration in minutes: 5, minutes left: 5)
+11) Isabella is leaving for Hobbs Cafe. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Maria is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Maria is getting out of bed. (duration in minutes: 2, minutes left: 52)
+4) Maria is making her bed. (duration in minutes: 3, minutes left: 49)
+5) Maria is using the bathroom. (duration in minutes: 5, minutes left: 44)
+6) Maria is taking a shower. (duration in minutes: 15, minutes left: 29)
+7) Maria is getting dressed. (duration in minutes: 5, minutes left: 24)
+8) Maria is doing her hair and makeup. (duration in minutes: 10, minutes left: 14)
+9) Maria is making breakfast. (duration in minutes: 10, minutes left: 4)
+10) Maria is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Maria is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Maria is getting out of bed. (duration in minutes: 2, minutes left: 52)
+4) Maria is making her bed. (duration in minutes: 3, minutes left: 49)
+5) Maria is using the bathroom. (duration in minutes: 5, minutes left: 44)
+6) Maria is taking a shower. (duration in minutes: 15, minutes left: 29)
+7) Maria is getting dressed. (duration in minutes: 5, minutes left: 24)
+8) Maria is doing her hair and makeup. (duration in minutes: 10, minutes left: 14)
+9) Maria is making breakfast. (duration in minutes: 10, minutes left: 4)
+10) Maria is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Klaus is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Klaus is making breakfast and eating. (duration in minutes: 15, minutes left: 10)
+5) Klaus is packing his bag with his laptop and research materials. (duration in minutes: 5, minutes left: 5)
+6) Klaus is checking his schedule and making sure he has everything he needs for the day. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Klaus is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Klaus is making breakfast and eating. (duration in minutes: 15, minutes left: 10)
+5) Klaus is packing his bag with his laptop and research materials. (duration in minutes: 5, minutes left: 5)
+6) Klaus is checking his schedule and making sure he has everything he needs for the day. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Isabella is taking a shower and getting dressed. (duration in minutes: 15, minutes left: 30)
+4) Isabella is making breakfast and coffee. (duration in minutes: 20, minutes left: 10)
+5) Isabella is eating breakfast and checking her emails. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Isabella is taking a shower and getting dressed. (duration in minutes: 15, minutes left: 30)
+4) Isabella is making breakfast and coffee. (duration in minutes: 20, minutes left: 10)
+5) Isabella is eating breakfast and checking her emails. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Maria is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Maria is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Maria is making breakfast and eating. (duration in minutes: 15, minutes left: 10)
+5) Maria is checking her schedule and making a to-do list for the day. (duration in minutes: 5, minutes left: 5)
+6) Maria is packing her bag for class. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Maria is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Maria is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Maria is making breakfast and eating. (duration in minutes: 15, minutes left: 10)
+5) Maria is checking her schedule and making a to-do list for the day. (duration in minutes: 5, minutes left: 5)
+6) Maria is packing her bag for class. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off his alarm. (duration in minutes: 1, minutes left: 59)
+2) Klaus is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Klaus is getting out of bed. (duration in minutes: 1, minutes left: 53)
+4) Klaus is making his bed. (duration in minutes: 3, minutes left: 50)
+5) Klaus is using the bathroom. (duration in minutes: 5, minutes left: 45)
+6) Klaus is taking a shower. (duration in minutes: 10, minutes left: 35)
+7) Klaus is getting dressed. (duration in minutes: 5, minutes left: 30)
+8) Klaus is making breakfast. (duration in minutes: 15, minutes left: 15)
+9) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 5)
+10) Klaus is washing his dishes. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off his alarm. (duration in minutes: 1, minutes left: 59)
+2) Klaus is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Klaus is getting out of bed. (duration in minutes: 1, minutes left: 53)
+4) Klaus is making his bed. (duration in minutes: 3, minutes left: 50)
+5) Klaus is using the bathroom. (duration in minutes: 5, minutes left: 45)
+6) Klaus is taking a shower. (duration in minutes: 10, minutes left: 35)
+7) Klaus is getting dressed. (duration in minutes: 5, minutes left: 30)
+8) Klaus is making breakfast. (duration in minutes: 15, minutes left: 15)
+9) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 5)
+10) Klaus is washing his dishes. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Isabella is taking a shower and getting dressed. (duration in minutes: 15, minutes left: 30)
+4) Isabella is making breakfast and coffee. (duration in minutes: 20, minutes left: 10)
+5) Isabella is eating breakfast and checking her phone for any important messages. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Isabella is taking a shower and getting dressed. (duration in minutes: 15, minutes left: 30)
+4) Isabella is making breakfast and coffee. (duration in minutes: 20, minutes left: 10)
+5) Isabella is eating breakfast and checking her phone for any important messages. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Maria is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Maria is getting out of bed. (duration in minutes: 2, minutes left: 52)
+4) Maria is making her bed. (duration in minutes: 3, minutes left: 49)
+5) Maria is using the bathroom. (duration in minutes: 5, minutes left: 44)
+6) Maria is taking a shower. (duration in minutes: 15, minutes left: 29)
+7) Maria is getting dressed. (duration in minutes: 5, minutes left: 24)
+8) Maria is doing her hair and makeup. (duration in minutes: 10, minutes left: 14)
+9) Maria is making breakfast. (duration in minutes: 10, minutes left: 4)
+10) Maria is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Maria is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Maria is getting out of bed. (duration in minutes: 2, minutes left: 52)
+4) Maria is making her bed. (duration in minutes: 3, minutes left: 49)
+5) Maria is using the bathroom. (duration in minutes: 5, minutes left: 44)
+6) Maria is taking a shower. (duration in minutes: 15, minutes left: 29)
+7) Maria is getting dressed. (duration in minutes: 5, minutes left: 24)
+8) Maria is doing her hair and makeup. (duration in minutes: 10, minutes left: 14)
+9) Maria is making breakfast. (duration in minutes: 10, minutes left: 4)
+10) Maria is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and getting out of bed. (duration in minutes: 5, minutes left: 50)
+3) Klaus is making his bed. (duration in minutes: 5, minutes left: 45)
+4) Klaus is using the bathroom and washing his face. (duration in minutes: 10, minutes left: 35)
+5) Klaus is brushing his teeth. (duration in minutes: 5, minutes left: 30)
+6) Klaus is getting dressed. (duration in minutes: 10, minutes left: 20)
+7) Klaus is making breakfast. (duration in minutes: 15, minutes left: 5)
+8) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and getting out of bed. (duration in minutes: 5, minutes left: 50)
+3) Klaus is making his bed. (duration in minutes: 5, minutes left: 45)
+4) Klaus is using the bathroom and washing his face. (duration in minutes: 10, minutes left: 35)
+5) Klaus is brushing his teeth. (duration in minutes: 5, minutes left: 30)
+6) Klaus is getting dressed. (duration in minutes: 10, minutes left: 20)
+7) Klaus is making breakfast. (duration in minutes: 15, minutes left: 5)
+8) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off her alarm. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and getting out of bed. (duration in minutes: 10, minutes left: 45)
+3) Isabella is washing her face and brushing her teeth. (duration in minutes: 10, minutes left: 35)
+4) Isabella is getting dressed in her cafe uniform. (duration in minutes: 10, minutes left: 25)
+5) Isabella is making breakfast and coffee. (duration in minutes: 15, minutes left: 10)
+6) Isabella is eating breakfast and checking her phone for any important messages. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off her alarm. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and getting out of bed. (duration in minutes: 10, minutes left: 45)
+3) Isabella is washing her face and brushing her teeth. (duration in minutes: 10, minutes left: 35)
+4) Isabella is getting dressed in her cafe uniform. (duration in minutes: 10, minutes left: 25)
+5) Isabella is making breakfast and coffee. (duration in minutes: 15, minutes left: 10)
+6) Isabella is eating breakfast and checking her phone for any important messages. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Maria is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Maria is taking a shower and getting dressed. (duration in minutes: 15, minutes left: 30)
+4) Maria is making breakfast and eating. (duration in minutes: 20, minutes left: 10)
+5) Maria is checking her schedule and making a to-do list for the day. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Maria is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Maria is taking a shower and getting dressed. (duration in minutes: 15, minutes left: 30)
+4) Maria is making breakfast and eating. (duration in minutes: 20, minutes left: 10)
+5) Maria is checking her schedule and making a to-do list for the day. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off his alarm. (duration in minutes: 1, minutes left: 59)
+2) Klaus is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Klaus is getting out of bed. (duration in minutes: 1, minutes left: 53)
+4) Klaus is making his bed. (duration in minutes: 3, minutes left: 50)
+5) Klaus is using the bathroom. (duration in minutes: 5, minutes left: 45)
+6) Klaus is taking a shower. (duration in minutes: 10, minutes left: 35)
+7) Klaus is getting dressed. (duration in minutes: 5, minutes left: 30)
+8) Klaus is making breakfast. (duration in minutes: 15, minutes left: 15)
+9) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 5)
+10) Klaus is washing his dishes. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off his alarm. (duration in minutes: 1, minutes left: 59)
+2) Klaus is stretching in bed. (duration in minutes: 5, minutes left: 54)
+3) Klaus is getting out of bed. (duration in minutes: 1, minutes left: 53)
+4) Klaus is making his bed. (duration in minutes: 3, minutes left: 50)
+5) Klaus is using the bathroom. (duration in minutes: 5, minutes left: 45)
+6) Klaus is taking a shower. (duration in minutes: 10, minutes left: 35)
+7) Klaus is getting dressed. (duration in minutes: 5, minutes left: 30)
+8) Klaus is making breakfast. (duration in minutes: 15, minutes left: 15)
+9) Klaus is eating breakfast. (duration in minutes: 10, minutes left: 5)
+10) Klaus is washing his dishes. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Isabella is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Isabella is making breakfast and coffee. (duration in minutes: 15, minutes left: 10)
+5) Isabella is checking her phone and responding to any urgent messages. (duration in minutes: 5, minutes left: 5)
+6) Isabella is eating breakfast and drinking her coffee. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Isabella is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Isabella is making breakfast and coffee. (duration in minutes: 15, minutes left: 10)
+5) Isabella is checking her phone and responding to any urgent messages. (duration in minutes: 5, minutes left: 5)
+6) Isabella is eating breakfast and drinking her coffee. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is brushing her teeth. (duration in minutes: 3, minutes left: 52)
+3) Isabella is washing her face. (duration in minutes: 2, minutes left: 50)
+4) Isabella is changing into her work clothes. (duration in minutes: 5, minutes left: 45)
+5) Isabella is making breakfast. (duration in minutes: 10, minutes left: 35)
+6) Isabella is eating breakfast. (duration in minutes: 15, minutes left: 20)
+7) Isabella is checking her phone for any important messages or notifications. (duration in minutes: 5, minutes left: 15)
+8) Isabella is getting ready to leave for work. (duration in minutes: 10, minutes left: 5)
+9) Isabella is grabbing her keys and locking her apartment. (duration in minutes: 2, minutes left: 3)
+10) Isabella is walking to Hobbs Cafe. (duration in minutes: 3, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Isabella is brushing her teeth. (duration in minutes: 3, minutes left: 52)
+3) Isabella is washing her face. (duration in minutes: 2, minutes left: 50)
+4) Isabella is changing into her work clothes. (duration in minutes: 5, minutes left: 45)
+5) Isabella is making breakfast. (duration in minutes: 10, minutes left: 35)
+6) Isabella is eating breakfast. (duration in minutes: 15, minutes left: 20)
+7) Isabella is checking her phone for any important messages or notifications. (duration in minutes: 5, minutes left: 15)
+8) Isabella is getting ready to leave for work. (duration in minutes: 10, minutes left: 5)
+9) Isabella is grabbing her keys and locking her apartment. (duration in minutes: 2, minutes left: 3)
+10) Isabella is walking to Hobbs Cafe. (duration in minutes: 3, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+TOKEN LIMIT EXCEEDED
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+TOKEN LIMIT EXCEEDED
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Isabella is stretching and getting out of bed. (duration in minutes: 5, minutes left: 54)
+3) Isabella is washing her face and brushing her teeth. (duration in minutes: 10, minutes left: 44)
+4) Isabella is getting dressed for the day. (duration in minutes: 10, minutes left: 34)
+5) Isabella is making breakfast. (duration in minutes: 15, minutes left: 19)
+6) Isabella is eating breakfast. (duration in minutes: 10, minutes left: 9)
+7) Isabella is checking her phone for any important messages or notifications. (duration in minutes: 5, minutes left: 4)
+8) Isabella is packing her bag with any necessary items for the day. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm. (duration in minutes: 1, minutes left: 59)
+2) Isabella is stretching and getting out of bed. (duration in minutes: 5, minutes left: 54)
+3) Isabella is washing her face and brushing her teeth. (duration in minutes: 10, minutes left: 44)
+4) Isabella is getting dressed for the day. (duration in minutes: 10, minutes left: 34)
+5) Isabella is making breakfast. (duration in minutes: 15, minutes left: 19)
+6) Isabella is eating breakfast. (duration in minutes: 10, minutes left: 9)
+7) Isabella is checking her phone for any important messages or notifications. (duration in minutes: 5, minutes left: 4)
+8) Isabella is packing her bag with any necessary items for the day. (duration in minutes: 5, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Maria is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Maria is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Maria is making breakfast and eating. (duration in minutes: 15, minutes left: 10)
+5) Maria is checking her schedule and making a to-do list for the day. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ turning off her alarm and getting out of bed. (duration in minutes: 5, minutes left: 55)
+2) Maria is stretching and doing some light exercises. (duration in minutes: 10, minutes left: 45)
+3) Maria is taking a shower and getting dressed. (duration in minutes: 20, minutes left: 25)
+4) Maria is making breakfast and eating. (duration in minutes: 15, minutes left: 10)
+5) Maria is checking her schedule and making a to-do list for the day. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and getting out of bed. (duration in minutes: 5, minutes left: 50)
+3) Klaus is making his bed. (duration in minutes: 5, minutes left: 45)
+4) Klaus is using the bathroom and washing his face. (duration in minutes: 10, minutes left: 35)
+5) Klaus is brushing his teeth. (duration in minutes: 5, minutes left: 30)
+6) Klaus is taking a shower. (duration in minutes: 15, minutes left: 15)
+7) Klaus is getting dressed. (duration in minutes: 10, minutes left: 5)
+8) Klaus is making breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+ waking up and turning off his alarm. (duration in minutes: 5, minutes left: 55)
+2) Klaus is stretching and getting out of bed. (duration in minutes: 5, minutes left: 50)
+3) Klaus is making his bed. (duration in minutes: 5, minutes left: 45)
+4) Klaus is using the bathroom and washing his face. (duration in minutes: 10, minutes left: 35)
+5) Klaus is brushing his teeth. (duration in minutes: 5, minutes left: 30)
+6) Klaus is taking a shower. (duration in minutes: 15, minutes left: 15)
+7) Klaus is getting dressed. (duration in minutes: 10, minutes left: 5)
+8) Klaus is making breakfast. (duration in minutes: 10, minutes left: 0)
+=== END OF TEXT ===============================================
+

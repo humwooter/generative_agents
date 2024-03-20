@@ -24,11 +24,12 @@ daily_reflection_time: 180
 daily_req: [
   "wake up and complete the morning routine at 9:00 am",
   "attend physics classes from 10:00 am to 12:00 pm",
-  "have lunch at 12:30 pm",
-  "study at Hobbs Cafe from 1:00 pm to 3:00 pm",
-  "go to the gym for a workout from 3:30 pm to 5:00 pm",
-  "have dinner at 6:00 pm",
-  "stream on Twitch from 7:00 pm to 10:00 pm"
+  "have lunch at Hobbs Cafe at 1:00 pm",
+  "study at Hobbs Cafe from 2:00 pm to 4:00 pm",
+  "stream games on Twitch from 4:30 pm to 7:00 pm",
+  "have dinner at 7:30 pm",
+  "study at home from 8:00 pm to 10:00 pm",
+  "relax and watch TV or hang out with friends from 10:00 pm to 12:00 am"
 ]
 f_daily_schedule: [
   [
@@ -60,7 +61,7 @@ f_daily_schedule: [
     120
   ],
   [
-    "having lunch",
+    "having lunch at Hobbs Cafe",
     60
   ],
   [
@@ -68,23 +69,27 @@ f_daily_schedule: [
     180
   ],
   [
-    "at the gym for a workout",
+    "streaming games on Twitch",
     120
   ],
   [
-    "having dinner",
+    "having dinner at Hobbs Cafe",
     60
   ],
   [
-    "streaming on Twitch",
-    180
-  ],
-  [
-    "winding down for the night and getting ready for bed",
+    "streaming games on Twitch",
     60
   ],
   [
-    "going to bed",
+    "studying at home",
+    120
+  ],
+  [
+    "relaxing and watching TV or hanging out with friends",
+    60
+  ],
+  [
+    "winding down and getting ready for bed",
     60
   ],
   [
@@ -106,7 +111,7 @@ f_daily_schedule_hourly_org: [
     120
   ],
   [
-    "having lunch",
+    "having lunch at Hobbs Cafe",
     60
   ],
   [
@@ -114,23 +119,27 @@ f_daily_schedule_hourly_org: [
     180
   ],
   [
-    "at the gym for a workout",
+    "streaming games on Twitch",
     120
   ],
   [
-    "having dinner",
+    "having dinner at Hobbs Cafe",
     60
   ],
   [
-    "streaming on Twitch",
-    180
-  ],
-  [
-    "winding down for the night and getting ready for bed",
+    "streaming games on Twitch",
     60
   ],
   [
-    "going to bed",
+    "studying at home",
+    120
+  ],
+  [
+    "relaxing and watching TV or hanging out with friends",
+    60
+  ],
+  [
+    "winding down and getting ready for bed",
     60
   ]
 ]

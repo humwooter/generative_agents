@@ -280,8 +280,98 @@ def LLM_request(prompt, llm_parameters, url="http://169.231.53.160:1234/v1/compl
       print(f"An error occurred: {e}")
       return "Request failed"
 
+def get_wake_up_hour(json_response):
+  import re
+  json_string = json_response["response"]
+  try:
+    data = json.loads(json_string)
+    for key, value in data.items():
+        # Check if key contains 'wake'
+        if "wake" in key.lower():
+            return value
+        # Check if value is a string that contains 'am'
+        if isinstance(value, str) and "am" in value.lower():
+            return value
+        # Check if value matches the format '0H:MM'
+        if isinstance(value, str) and re.match(r'\d{1}:\d{2}', value):
+            return value
+    return ""
+  except json.JSONDecodeError:
+      return "Invalid JSON input"
+  return ""
+
+def GPT_request_with_local_fallback(prompt, gpt_parameter):
+  log_and_track_function_calls("GPT_request_with_local_fallback")
+  save_gpt_prompt_to_file("GPT_request_with_local_fallback-prompts.txt", gpt_parameter, prompt)
+  """
+  Given a prompt and a dictionary of GPT parameters, make a request to OpenAI
+  server and returns the response. If the prompt length is less than 300 words,
+  a local request is made instead.
+  ARGS:
+    prompt: a str prompt
+    gpt_parameter: a python dictionary with the keys indicating the names of  
+                   the parameter and the values indicating the parameter 
+                   values.   
+  RETURNS: 
+    a str of GPT-3's response or local model's response. 
+  """
+  print("PROMPT FROM GPT_REQUEST: ", prompt)
+  temp_sleep()
+  if gpt_parameter["max_tokens"] == 5:
+    print("ENTEERED THIS LOOP WHERE IT SAYS THERES 5 TOKENS")
+
+    response_json = send_request_to_localhost(prompt, "gemma:2b")
+    response_str = str(get_wake_up_hour(response_json)).replace(" ", "")
+    json_string = response_json["response"]
+
+    if len(response_str) == 0:
+      try: 
+        final_response = GPT_request_standard(prompt, gpt_param)
+        save_gpt_output_to_file("GPT_request-complete-output.txt", gpt_parameter, prompt, final_response)
+        return final_response
+
+      except: 
+        return "TOKEN LIMIT EXCEEDED"
+    else:
+      formatted_output = f"{json_string}\n{response_str}"
+
+      save_gpt_output_to_file("Gemma_request-complete-output.txt", gpt_parameter, prompt, formatted_output)
+      log_and_track_function_calls("Gemma_request_with_local_fallback")
+      return response_str
+  else:
+    print("ENTERED THE OTHER LOOP WHERE TOKENS IS MORE THAN 5")
+    try:
+      final_response = GPT_request_standard(prompt, gpt_parameter)
+      save_gpt_output_to_file("GPT_request-complete-output.txt", gpt_parameter, prompt, final_response)
+      print("RESPOSNES FROM WITHIN LOOP 2: ", final_response)
+
+      return final_response
+    except: 
+      return "TOKEN LIMIT EXCEEDED"
+
+
+def send_request_to_localhost(prompt, model_name):
+    import requests
+    import json
+    url = "http://localhost:11434/api/generate"
+    headers = {"Content-Type": "application/json"}
+    data = {
+        "model": model_name,
+        "prompt": prompt,
+        "format": "json",
+        "stream": False
+    }
+    
+    response = requests.post(url, headers=headers, data=json.dumps(data))
+    print("RESPONSE: ", response.json())  # This line is changed to print the JSON content of the response
+    return response.json()  # Assuming the response JSON structure contains the generated text under a "text" key
+
 
 def GPT_request(prompt, gpt_parameter):
+  return GPT_request_with_local_fallback(prompt, gpt_parameter) ######
+
+  
+def GPT_request_standard(prompt, gpt_parameter):
   log_and_track_function_calls( "GPT_request")
   save_gpt_prompt_to_file("GPT_request-prompts.txt", gpt_parameter, prompt)        
   """
@@ -307,11 +397,10 @@ def GPT_request(prompt, gpt_parameter):
                 presence_penalty=gpt_parameter["presence_penalty"],
                 stream=gpt_parameter["stream"],
                 stop=gpt_parameter["stop"],)
+    save_gpt_output_to_file("GPT_request-complete-output.txt", gpt_parameter, prompt, response.choices[0].text)
     return response.choices[0].text
   except: 
     return "TOKEN LIMIT EXCEEDED"
-  
-
 
 def generate_prompt(curr_input, prompt_lib_file):
   log_and_track_function_calls( "generate_prompt") # REMOVE LATER             
@@ -350,7 +439,8 @@ def safe_generate_response(prompt,
                            func_validate=None,
                            func_clean_up=None,
                            verbose=False):
- 
+  print("PROMPT FROM SAFE GENERATE RESPONSE: ", prompt)
+
   if verbose: 
     log_and_track_function_calls( "safe_generate_response") # REMOVE LATER             
     write_to_file_in_console_logs(filename="prompts.txt", text=prompt)
@@ -358,6 +448,7 @@ def safe_generate_response(prompt,
 
   for i in range(repeat): 
     curr_gpt_response = GPT_request(prompt, gpt_parameter)
+    print("RESPONSE FROM SAFE GENERATE RESPONSE: ", curr_gpt_response)
     if func_validate(curr_gpt_response, prompt=prompt): 
       return func_clean_up(curr_gpt_response, prompt=prompt)
     if verbose: 

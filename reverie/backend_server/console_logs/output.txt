@@ -89,3 +89,675 @@ o
 m
 === END OF TEXT ===============================================
 
+
+=== START OF TEXT =============================================
+['waking up and stretching', 5]
+['checking her phone for any urgent messages', 5]
+['getting out of bed and making her bed', 10]
+['taking a shower', 15]
+['getting dressed', 10]
+['making breakfast', 15]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+m
+a
+i
+n
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and getting dressed in her athletic gear', 10]
+['stretching and warming up her muscles', 15]
+['starting her run at a moderate pace', 10]
+['increasing her speed and intensity', 10]
+['focusing on her breathing and form', 10]
+['taking a water break', 5]
+['continuing her run at a faster pace', 10]
+['incorporating sprints and intervals into her run', 15]
+['cooling down and stretching her muscles', 10]
+['hydrating and refueling with a protein shake', 10]
+['showering and changing into her school clothes', 15]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+M
+a
+r
+i
+a
+ 
+L
+o
+p
+e
+z
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and stretching', 5]
+['taking a shower', 10]
+['getting dressed', 5]
+['making breakfast', 15]
+['eating breakfast', 10]
+['washing dishes', 5]
+['packing his bag for work', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+K
+l
+a
+u
+s
+ 
+M
+u
+e
+l
+l
+e
+r
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['stretching and getting out of bed', 5]
+['washing her face and brushing her teeth', 10]
+['getting dressed', 10]
+['making her bed', 5]
+['checking her phone for any urgent messages', 5]
+['making breakfast', 15]
+['eating breakfast', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+m
+a
+i
+n
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['stretching in bed', 5]
+['using the bathroom', 5]
+['taking a shower', 15]
+['getting dressed', 5]
+['doing her hair and makeup', 10]
+['making breakfast', 10]
+['eating breakfast', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+M
+a
+r
+i
+a
+ 
+L
+o
+p
+e
+z
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and turning off his alarm', 5]
+['stretching and getting out of bed', 5]
+['making his bed', 5]
+['using the bathroom and washing his face', 10]
+['brushing his teeth', 5]
+['taking a shower', 15]
+['getting dressed', 10]
+['making breakfast', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+K
+l
+a
+u
+s
+ 
+M
+u
+e
+l
+l
+e
+r
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and stretching', 5]
+['getting dressed', 5]
+['making her bed', 5]
+['checking her phone for any urgent messages', 5]
+['making breakfast', 10]
+['eating breakfast', 10]
+['packing her bag for the day', 5]
+['checking the weather and choosing appropriate clothing', 5]
+['leaving for Hobbs Cafe', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+m
+a
+i
+n
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['stretching in bed', 5]
+['using the bathroom', 5]
+['taking a shower', 15]
+['getting dressed', 5]
+['doing her hair and makeup', 10]
+['making breakfast', 10]
+['eating breakfast', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+M
+a
+r
+i
+a
+ 
+L
+o
+p
+e
+z
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and turning off his alarm', 5]
+['stretching and doing some light exercises', 10]
+['taking a shower and getting dressed', 20]
+['making breakfast and eating', 15]
+['packing his bag with his laptop and research materials', 5]
+['checking his schedule and making sure he has everything he needs for the day', 5]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+K
+l
+a
+u
+s
+ 
+M
+u
+e
+l
+l
+e
+r
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and getting out of bed', 5]
+['stretching and doing some light exercises', 10]
+['taking a shower and getting dressed', 15]
+['making breakfast and coffee', 20]
+['eating breakfast and checking her emails', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+m
+a
+i
+n
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['turning off her alarm and getting out of bed', 5]
+['stretching and doing some light exercises', 10]
+['taking a shower and getting dressed', 20]
+['making breakfast and eating', 15]
+['checking her schedule and making a to-do list for the day', 5]
+['packing her bag for class', 5]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+M
+a
+r
+i
+a
+ 
+L
+o
+p
+e
+z
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['stretching in bed', 5]
+['using the bathroom', 5]
+['taking a shower', 10]
+['getting dressed', 5]
+['making breakfast', 15]
+['eating breakfast', 10]
+['washing his dishes', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+K
+l
+a
+u
+s
+ 
+M
+u
+e
+l
+l
+e
+r
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and getting out of bed', 5]
+['stretching and doing some light exercises', 10]
+['taking a shower and getting dressed', 15]
+['making breakfast and coffee', 20]
+['eating breakfast and checking her phone for any important messages', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+m
+a
+i
+n
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['stretching in bed', 5]
+['using the bathroom', 5]
+['taking a shower', 15]
+['getting dressed', 5]
+['doing her hair and makeup', 10]
+['making breakfast', 10]
+['eating breakfast', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+M
+a
+r
+i
+a
+ 
+L
+o
+p
+e
+z
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and turning off his alarm', 5]
+['stretching and getting out of bed', 5]
+['making his bed', 5]
+['using the bathroom and washing his face', 10]
+['brushing his teeth', 5]
+['getting dressed', 10]
+['making breakfast', 15]
+['eating breakfast', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+K
+l
+a
+u
+s
+ 
+M
+u
+e
+l
+l
+e
+r
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and turning off her alarm', 5]
+['stretching and getting out of bed', 10]
+['washing her face and brushing her teeth', 10]
+['getting dressed in her cafe uniform', 10]
+['making breakfast and coffee', 15]
+['eating breakfast and checking her phone for any important messages', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+m
+a
+i
+n
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['turning off her alarm and getting out of bed', 5]
+['stretching and doing some light exercises', 10]
+['taking a shower and getting dressed', 15]
+['making breakfast and eating', 20]
+['checking her schedule and making a to-do list for the day', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+M
+a
+r
+i
+a
+ 
+L
+o
+p
+e
+z
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['stretching in bed', 5]
+['using the bathroom', 5]
+['taking a shower', 10]
+['getting dressed', 5]
+['making breakfast', 15]
+['eating breakfast', 10]
+['washing his dishes', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+K
+l
+a
+u
+s
+ 
+M
+u
+e
+l
+l
+e
+r
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and getting out of bed', 5]
+['stretching and doing some light exercises', 10]
+['taking a shower and getting dressed', 20]
+['making breakfast and coffee', 15]
+['checking her phone and responding to any urgent messages', 5]
+['eating breakfast and drinking her coffee', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and getting out of bed', 5]
+['changing into her work clothes', 5]
+['making breakfast', 10]
+['eating breakfast', 15]
+['checking her phone for any important messages or notifications', 5]
+['getting ready to leave for work', 20]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+k
+i
+t
+c
+h
+e
+n
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['stretching and getting out of bed', 5]
+['washing her face and brushing her teeth', 10]
+['getting dressed for the day', 10]
+['making breakfast', 15]
+['eating breakfast', 10]
+['checking her phone for any important messages or notifications', 5]
+['packing her bag with any necessary items for the day', 5]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+m
+a
+i
+n
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['turning off her alarm and getting out of bed', 5]
+['stretching and doing some light exercises', 10]
+['taking a shower and getting dressed', 20]
+['making breakfast and eating', 15]
+['checking her schedule and making a to-do list for the day', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+M
+a
+r
+i
+a
+ 
+L
+o
+p
+e
+z
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['waking up and turning off his alarm', 5]
+['stretching and getting out of bed', 5]
+['making his bed', 5]
+['using the bathroom and washing his face', 10]
+['brushing his teeth', 5]
+['taking a shower', 15]
+['getting dressed', 10]
+['making breakfast', 10]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+K
+l
+a
+u
+s
+ 
+M
+u
+e
+l
+l
+e
+r
+'
+s
+ 
+r
+o
+o
+m
+=== END OF TEXT ===============================================
+

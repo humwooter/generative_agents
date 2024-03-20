@@ -28,3 +28,45 @@ being slept on
 ['being slept on', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
 === END OF TEXT ===============================================
 
+
+=== START OF TEXT =============================================
+being slept in
+['being slept in', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+being slept on
+['being slept on', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+being slept in
+['being slept in', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+being utilized
+['being utilized', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+being slept on
+['being slept on', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+being occupied
+['being occupied', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+being slept on
+['being slept on', "Task: We want to understand the state of an object that is being used by someone. \n\nLet's think step by step. \nWe want to know about bed's state. \nStep 1. Isabella Rodriguez is at/using the sleeping.\nStep 2. Describe the bed's state: bed is", {'engine': 'gpt-3.5-turbo-instruct', 'max_tokens': 15, 'temperature': 0, 'top_p': 1, 'stream': False, 'frequency_penalty': 0, 'presence_penalty': 0, 'stop': None}, ['bed', 'Isabella Rodriguez', 'sleeping', 'bed', 'bed'], 'bed is idle']
+=== END OF TEXT ===============================================
+

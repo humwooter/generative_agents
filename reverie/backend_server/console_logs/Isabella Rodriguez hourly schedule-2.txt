@@ -24,3 +24,310 @@
 ["going to bed at 11:00 pm to get a good night's rest before the Valentine's Day party tomorrow", 60]
 === END OF TEXT ===============================================
 
+
+=== START OF TEXT =============================================
+['sleeping', 480]
+['waking up and completing her morning routine (waking up and stretching)', 5]
+['waking up and completing her morning routine (checking her phone for any urgent messages)', 5]
+['waking up and completing her morning routine (getting out of bed and making her bed)', 10]
+['waking up and completing her morning routine (taking a shower)', 15]
+['waking up and completing her morning routine (getting dressed)', 10]
+['waking up and completing her morning routine (making breakfast)', 15]
+["meeting with Klaus to discuss final details for the Valentine's Day event", 60]
+["promoting the Valentine's Day event on social media and updating the cafe's website", 60]
+['taking a break for lunch and trying out new recipes with Klaus', 60]
+['having lunch and trying out new recipes with Klaus', 60]
+["meeting with the cafe's staff to go over the event's schedule and delegation of tasks", 60]
+["decorating the cafe for the Valentine's Day event", 120]
+["meeting with Klaus to go over any last-minute changes for the Valentine's Day event", 60]
+['taking a break for dinner', 60]
+['having dinner and discussing event logistics with Klaus', 60]
+["attending the Valentine's Day event at Hobbs Cafe, mingling with guests and overseeing the event's progress", 240]
+['winding down from the event and reflecting on its success with Klaus', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 360]
+['waking up and completing her morning routine (stretching and getting out of bed)', 5]
+['waking up and completing her morning routine (washing her face and brushing her teeth)', 10]
+['waking up and completing her morning routine (getting dressed)', 10]
+['waking up and completing her morning routine (making her bed)', 5]
+['waking up and completing her morning routine (checking her phone for any urgent messages)', 5]
+['waking up and completing her morning routine (making breakfast)', 15]
+['waking up and completing her morning routine (eating breakfast)', 10]
+['having breakfast and preparing for the day', 60]
+['opening Hobbs Cafe and working at the counter', 60]
+["working at the counter and preparing for the Valentine's Day party", 60]
+['still working at the counter and taking breaks to prepare for the party', 120]
+['taking a lunch break', 60]
+['still working at the counter and taking breaks to prepare for the party', 240]
+["gathering party materials and setting up for the Valentine's Day party", 60]
+['closing Hobbs Cafe and heading home', 60]
+['spending some time relaxing or watching TV', 60]
+['spending time with her family or friends', 120]
+['getting ready for bed', 60]
+['going to bed at 11:00 pm to get enough rest for the busy day tomorrow', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['asleep', 1440]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 360]
+['waking up and completing her morning routine (waking up and stretching)', 5]
+['waking up and completing her morning routine (getting dressed)', 5]
+['waking up and completing her morning routine (making her bed)', 5]
+['waking up and completing her morning routine (checking her phone for any urgent messages)', 5]
+['waking up and completing her morning routine (making breakfast)', 10]
+['waking up and completing her morning routine (eating breakfast)', 10]
+['waking up and completing her morning routine (packing her bag for the day)', 5]
+['waking up and completing her morning routine (checking the weather and choosing appropriate clothing)', 5]
+['waking up and completing her morning routine (leaving for Hobbs Cafe)', 10]
+['opening Hobbs Cafe and preparing for the day ahead', 60]
+['working at the counter at Hobbs Cafe', 60]
+['still working at the counter and taking orders from customers', 180]
+['taking a lunch break and having a quick bite to eat', 60]
+['still working at the counter and taking orders from customers', 120]
+['taking a break to respond to party RSVPs and confirm details with suppliers', 60]
+['still working at the counter and taking orders from customers', 60]
+["closing Hobbs Cafe and preparing for the Valentine's Day party tomorrow", 60]
+['having a light dinner and taking a break before starting preparations for the party tomorrow', 60]
+["starting preparations for the Valentine's Day party tomorrow", 60]
+['closing Hobbs Cafe and finishing up preparations for the party tomorrow', 60]
+['unwinding and getting ready for bed', 60]
+["going to bed to get a good night's rest before the busy day ahead tomorrow", 60]
+["sleeping to get a good night's rest before the busy day ahead tomorrow", 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 360]
+['waking up and completing her morning routine (waking up and getting out of bed)', 5]
+['waking up and completing her morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing her morning routine (taking a shower and getting dressed)', 15]
+['waking up and completing her morning routine (making breakfast and coffee)', 20]
+['waking up and completing her morning routine (eating breakfast and checking her emails)', 10]
+["starting to prepare for the Valentine's Day party at Hobbs Cafe", 60]
+['picking up party supplies', 60]
+['taking a break for lunch', 60]
+['continuing to prepare for the party at Hobbs Cafe', 60]
+['finishing up preparations for the party and taking a break before opening the cafe', 60]
+['taking a break for lunch', 60]
+["decorating the cafe for the Valentine's Day party", 60]
+['taking a break to rest and freshen up', 60]
+['finishing decorating the cafe for the party', 60]
+['taking a break to rest and freshen up', 60]
+["hosting the Valentine's Day party at Hobbs Cafe with customers", 60]
+["socializing and enjoying the Valentine's Day party with her customers", 60]
+["hosting the Valentine's Day party at Hobbs Cafe with customers", 60]
+['closing Hobbs Cafe and cleaning up after the party', 60]
+['cleaning up and closing Hobbs Cafe for the night', 60]
+['finishing up any remaining tasks and closing Hobbs Cafe for the night', 120]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 360]
+['waking up and completing her morning routine (waking up and getting out of bed)', 5]
+['waking up and completing her morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing her morning routine (taking a shower and getting dressed)', 15]
+['waking up and completing her morning routine (making breakfast and coffee)', 20]
+['waking up and completing her morning routine (eating breakfast and checking her phone for any important messages)', 10]
+['checking inventory and preparing for the day at Hobbs Cafe', 60]
+['opening Hobbs Cafe and working at the counter', 60]
+['working at the counter and interacting with customers', 120]
+["working at the counter and preparing for the Valentine's Day party tomorrow", 120]
+['taking a break and having lunch', 60]
+["working at the counter and preparing for the Valentine's Day party tomorrow", 180]
+['having dinner at the cafe with her family and friends', 60]
+["working at the counter and preparing for the Valentine's Day party tomorrow", 60]
+['closing Hobbs Cafe and heading home', 60]
+['winding down for the night, possibly watching TV or spending time with family', 120]
+['getting ready for bed and going to sleep at 11:00 pm', 60]
+['sleeping', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 360]
+['waking up and completing her morning routine (waking up and turning off her alarm)', 5]
+['waking up and completing her morning routine (stretching and getting out of bed)', 10]
+['waking up and completing her morning routine (washing her face and brushing her teeth)', 10]
+['waking up and completing her morning routine (getting dressed in her cafe uniform)', 10]
+['waking up and completing her morning routine (making breakfast and coffee)', 15]
+['waking up and completing her morning routine (eating breakfast and checking her phone for any important messages)', 10]
+['preparing for the day and getting ready to open Hobbs Cafe at 8am', 60]
+['opening Hobbs Cafe and working at the counter', 60]
+['working at the counter at Hobbs Cafe', 240]
+['taking a break and having lunch', 60]
+['working at the counter at Hobbs Cafe', 180]
+["preparing for the Valentine's Day party at Hobbs Cafe", 60]
+['closing Hobbs Cafe for the day', 60]
+["setting up for the Valentine's Day party at Hobbs Cafe", 60]
+["preparing for the Valentine's Day party at Hobbs Cafe", 60]
+["hosting the Valentine's Day party at Hobbs Cafe", 120]
+["finishing up the Valentine's Day party and closing Hobbs Cafe for the night", 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 480]
+['waking up and completing her morning routine (waking up and getting out of bed)', 5]
+['waking up and completing her morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing her morning routine (taking a shower and getting dressed)', 20]
+['waking up and completing her morning routine (making breakfast and coffee)', 15]
+['waking up and completing her morning routine (checking her phone and responding to any urgent messages)', 10]
+['working at the counter at Hobbs Cafe', 240]
+['taking a lunch break', 120]
+['working at the counter at Hobbs Cafe', 120]
+["preparing for the Valentine's Day party at Hobbs Cafe", 60]
+['closing Hobbs Cafe for the day', 60]
+["setting up for the Valentine's Day party at Hobbs Cafe", 60]
+["hosting the Valentine's Day party at Hobbs Cafe", 120]
+["cleaning up after the Valentine's Day party at Hobbs Cafe", 60]
+['closing Hobbs Cafe for the night and going to bed', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 480]
+['waking up and completing her morning routine (waking up and getting out of bed)', 5]
+['waking up and completing her morning routine (changing into her work clothes)', 5]
+['waking up and completing her morning routine (making breakfast)', 10]
+['waking up and completing her morning routine (eating breakfast)', 15]
+['waking up and completing her morning routine (checking her phone for any important messages or notifications)', 5]
+['waking up and completing her morning routine (getting ready to leave for work)', 20]
+["opening Hobbs Cafe and starting to prepare for the Valentine's Day party", 60]
+["preparing for the Valentine's Day party", 120]
+['taking a break for lunch', 60]
+["continuing to prepare for the Valentine's Day party", 240]
+["greeting and welcoming guests for the Valentine's Day party", 60]
+["socializing with guests at the Valentine's Day party", 60]
+["enjoying the Valentine's Day party", 60]
+['cleaning up and closing Hobbs Cafe', 60]
+["relaxing at home and reflecting on the successful Valentine's Day party", 60]
+["reflecting on the successful Valentine's Day party and planning for future events at Hobbs Cafe", 60]
+["going to bed and getting a good night's sleep for another busy day at Hobbs Cafe tomorrow", 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 360]
+['waking up and completing her morning routine (stretching and getting out of bed)', 5]
+['waking up and completing her morning routine (washing her face and brushing her teeth)', 10]
+['waking up and completing her morning routine (getting dressed for the day)', 10]
+['waking up and completing her morning routine (making breakfast)', 15]
+['waking up and completing her morning routine (eating breakfast)', 10]
+['waking up and completing her morning routine (checking her phone for any important messages or notifications)', 5]
+['waking up and completing her morning routine (packing her bag with any necessary items for the day)', 5]
+['heading to Hobbs Cafe to start her day', 60]
+["at Hobbs Cafe, prepping for the Valentine's Day party tomorrow", 60]
+["prepping for the Valentine's Day party by decorating the cafe and finalizing the menu", 60]
+['taking a break to have lunch', 60]
+['finishing up the final details for the party and making sure everything is ready for tomorrow', 60]
+['taking a break to have lunch', 120]
+['finishing up the final details for the party and making sure everything is ready for tomorrow', 60]
+['taking a break to have a cup of coffee and chat with customers', 60]
+['taking a break to have a snack and check on the party preparations', 60]
+['closing Hobbs Cafe for the day', 60]
+['heading home to have dinner', 60]
+['having dinner at home and watching TV', 60]
+['spending time with loved ones and discussing final preparations for the party tomorrow', 60]
+['getting ready for bed and setting her alarm for 6:00 am tomorrow morning', 120]
+["going to bed to get a good night's rest before the busy day tomorrow", 60]
+=== END OF TEXT ===============================================
+

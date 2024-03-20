@@ -23,12 +23,13 @@ daily_reflection_size: 5
 daily_reflection_time: 180
 daily_req: [
   "wake up and complete the morning routine at 7:00 am",
-  "go to the library at Oak Hill College at 8:00 am",
-  "spend the day researching and writing his research paper",
-  "take a break for lunch at 12:00 pm",
-  "continue working on his paper until 4:00 pm",
-  "go to Hobbs Cafe for dinner at 5:00 pm",
-  "finish up any remaining work in the evening"
+  "head to the library at Oak Hill College at 8:00 am",
+  "spend the morning researching and taking notes for his paper",
+  "have a lunch break at 12:00 pm",
+  "continue writing and editing his paper until 3:00 pm",
+  "take a break and grab a coffee at Hobbs Cafe at 3:00 pm",
+  "return to the library at 4:00 pm to continue working on his paper",
+  "finish up and review his paper at 6:00 pm"
 ]
 f_daily_schedule: [
   [
@@ -36,11 +37,23 @@ f_daily_schedule: [
     420
   ],
   [
-    "waking up and completing his morning routine (stretching in bed)",
+    "waking up and completing his morning routine (waking up and turning off his alarm)",
     5
   ],
   [
-    "waking up and completing his morning routine (using the bathroom)",
+    "waking up and completing his morning routine (stretching and getting out of bed)",
+    5
+  ],
+  [
+    "waking up and completing his morning routine (making his bed)",
+    5
+  ],
+  [
+    "waking up and completing his morning routine (using the bathroom and washing his face)",
+    10
+  ],
+  [
+    "waking up and completing his morning routine (brushing his teeth)",
     5
   ],
   [
@@ -49,58 +62,58 @@ f_daily_schedule: [
   ],
   [
     "waking up and completing his morning routine (getting dressed)",
-    5
+    15
   ],
   [
-    "waking up and completing his morning routine (making breakfast)",
-    10
-  ],
-  [
-    "waking up and completing his morning routine (eating breakfast)",
-    10
-  ],
-  [
-    "waking up and completing his morning routine (washing his dishes)",
-    10
-  ],
-  [
-    "at the library at Oak Hill College",
+    "at the library at Oak Hill College researching and taking notes for his paper",
     60
   ],
   [
-    "researching and writing his research paper",
+    "still at the library, taking a break to grab a snack and stretch",
     180
   ],
   [
-    "taking a break for lunch",
+    "taking a lunch break and eating at Hobbs Cafe",
     60
   ],
   [
-    "back at the library and continuing to work on his research paper",
+    "still at the library, working on his paper",
+    120
+  ],
+  [
+    "taking a break and grabbing a coffee at Hobbs Cafe",
     60
   ],
   [
-    "researching and writing his research paper",
-    180
-  ],
-  [
-    "having dinner at Hobbs Cafe",
+    "still at the library, working on his paper",
     60
   ],
   [
-    "finishing up any remaining work for the day",
-    180
-  ],
-  [
-    "winding down for the day and preparing for bed",
+    "finishing up his paper and reviewing it for any final edits",
     60
   ],
   [
-    "going to bed at 11:00 pm to get a good night's rest for the next day",
+    "finishing up and reviewing his paper at the library",
     60
   ],
   [
-    "sleeping to get a good night's rest for the next day",
+    "heading home and having dinner at 7:00 pm",
+    60
+  ],
+  [
+    "taking a break and watching a documentary on gentrification for his paper",
+    60
+  ],
+  [
+    "finishing up and reviewing his paper at home",
+    60
+  ],
+  [
+    "winding down and getting ready for bed",
+    60
+  ],
+  [
+    "going to bed at 11:00 pm to get a good night's rest before turning in his paper tomorrow",
     60
   ],
   [
@@ -118,43 +131,55 @@ f_daily_schedule_hourly_org: [
     60
   ],
   [
-    "at the library at Oak Hill College",
+    "at the library at Oak Hill College researching and taking notes for his paper",
     60
   ],
   [
-    "researching and writing his research paper",
+    "still at the library, taking a break to grab a snack and stretch",
     180
   ],
   [
-    "taking a break for lunch",
+    "taking a lunch break and eating at Hobbs Cafe",
     60
   ],
   [
-    "back at the library and continuing to work on his research paper",
+    "still at the library, working on his paper",
+    120
+  ],
+  [
+    "taking a break and grabbing a coffee at Hobbs Cafe",
     60
   ],
   [
-    "researching and writing his research paper",
-    180
-  ],
-  [
-    "having dinner at Hobbs Cafe",
+    "still at the library, working on his paper",
     60
   ],
   [
-    "finishing up any remaining work for the day",
-    180
-  ],
-  [
-    "winding down for the day and preparing for bed",
+    "finishing up his paper and reviewing it for any final edits",
     60
   ],
   [
-    "going to bed at 11:00 pm to get a good night's rest for the next day",
+    "finishing up and reviewing his paper at the library",
     60
   ],
   [
-    "sleeping to get a good night's rest for the next day",
+    "heading home and having dinner at 7:00 pm",
+    60
+  ],
+  [
+    "taking a break and watching a documentary on gentrification for his paper",
+    60
+  ],
+  [
+    "finishing up and reviewing his paper at home",
+    60
+  ],
+  [
+    "winding down and getting ready for bed",
+    60
+  ],
+  [
+    "going to bed at 11:00 pm to get a good night's rest before turning in his paper tomorrow",
     60
   ]
 ]

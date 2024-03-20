@@ -16,3 +16,152 @@
 ['going to bed', 60]
 === END OF TEXT ===============================================
 
+
+=== START OF TEXT =============================================
+['sleeping', 300]
+['completing her morning run (waking up and getting dressed in her athletic gear)', 10]
+['completing her morning run (stretching and warming up her muscles)', 15]
+['completing her morning run (starting her run at a moderate pace)', 10]
+['completing her morning run (increasing her speed and intensity)', 10]
+['completing her morning run (focusing on her breathing and form)', 10]
+['completing her morning run (taking a water break)', 5]
+['completing her morning run (continuing her run at a faster pace)', 10]
+['completing her morning run (incorporating sprints and intervals into her run)', 15]
+['completing her morning run (cooling down and stretching her muscles)', 10]
+['completing her morning run (hydrating and refueling with a protein shake)', 10]
+['completing her morning run (showering and changing into her school clothes)', 15]
+['attending classes', 300]
+['having a protein-rich lunch', 60]
+['attending strength training or drills', 60]
+['attending classes', 120]
+['reviewing game tapes or strategizing with her team', 120]
+['attending strength training or drills', 60]
+['attending a workshop on sports nutrition for young athletes', 60]
+['studying sports science and biomechanics', 60]
+['attending a workshop on mental resilience for young athletes', 60]
+['reviewing game tapes or strategizing with her team', 60]
+['getting ready for bed and winding down for the night', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine (stretching in bed)', 5]
+['waking up and completing her morning routine (using the bathroom)', 5]
+['waking up and completing her morning routine (taking a shower)', 15]
+['waking up and completing her morning routine (getting dressed)', 5]
+['waking up and completing her morning routine (doing her hair and makeup)', 10]
+['waking up and completing her morning routine (making breakfast)', 10]
+['waking up and completing her morning routine (eating breakfast)', 10]
+['attending her physics class', 60]
+['studying at the library', 60]
+['finishing up her physics homework', 60]
+['having lunch at Hobbs Cafe', 60]
+['studying at the library', 60]
+['streaming on Twitch', 180]
+['having dinner and relaxing at home', 60]
+['streaming on Twitch', 120]
+['studying and completing assignments at home', 60]
+['streaming on Twitch', 60]
+['getting ready for bed and winding down for the night. She will go to sleep around 1:00 am', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine (stretching in bed)', 5]
+['waking up and completing her morning routine (using the bathroom)', 5]
+['waking up and completing her morning routine (taking a shower)', 15]
+['waking up and completing her morning routine (getting dressed)', 5]
+['waking up and completing her morning routine (doing her hair and makeup)', 10]
+['waking up and completing her morning routine (making breakfast)', 10]
+['waking up and completing her morning routine (eating breakfast)', 10]
+['attending her physics class at Oak Hill College', 120]
+['having lunch at Oak Hill College', 60]
+['studying at Hobbs Cafe', 180]
+['streaming on Twitch', 120]
+['having dinner', 60]
+['attending a Twitch streamer meeting', 60]
+['streaming on Twitch', 120]
+['winding down for the night and getting ready for bed', 60]
+['going to bed and preparing for the next day', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine (turning off her alarm and getting out of bed)', 5]
+['waking up and completing her morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing her morning routine (taking a shower and getting dressed)', 20]
+['waking up and completing her morning routine (making breakfast and eating)', 15]
+['waking up and completing her morning routine (checking her schedule and making a to-do list for the day)', 5]
+['waking up and completing her morning routine (packing her bag for class)', 5]
+['attending physics class at Oak Hill College', 60]
+['still in physics class', 60]
+['having lunch at Hobbs Cafe', 60]
+['still studying at Hobbs Cafe', 300]
+['streaming on Twitch', 60]
+['having dinner', 60]
+['still streaming on Twitch', 120]
+['winding down and getting ready for bed', 120]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine (stretching in bed)', 5]
+['waking up and completing her morning routine (using the bathroom)', 5]
+['waking up and completing her morning routine (taking a shower)', 15]
+['waking up and completing her morning routine (getting dressed)', 5]
+['waking up and completing her morning routine (doing her hair and makeup)', 10]
+['waking up and completing her morning routine (making breakfast)', 10]
+['waking up and completing her morning routine (eating breakfast)', 10]
+['attending her physics class', 120]
+['having lunch at Hobbs Cafe', 60]
+['studying at the library or Hobbs Cafe', 180]
+['attending a study group', 120]
+['having dinner at Hobbs Cafe', 60]
+['streaming games on Twitch', 180]
+['winding down and relaxing before bed', 60]
+['going to bed', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine (turning off her alarm and getting out of bed)', 5]
+['waking up and completing her morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing her morning routine (taking a shower and getting dressed)', 15]
+['waking up and completing her morning routine (making breakfast and eating)', 20]
+['waking up and completing her morning routine (checking her schedule and making a to-do list for the day)', 10]
+['attending physics classes', 180]
+['studying at Hobbs Cafe', 180]
+['doing laundry and preparing for Twitch stream', 60]
+['taking a break for a snack and stretching', 60]
+['streaming on Twitch', 60]
+['taking a break for a snack and stretching', 60]
+['ending her Twitch stream and taking a break for dinner', 60]
+['having dinner and relaxing after a long day', 60]
+['winding down and getting ready for bed', 60]
+['going to bed', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 540]
+['waking up and completing her morning routine (turning off her alarm and getting out of bed)', 5]
+['waking up and completing her morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing her morning routine (taking a shower and getting dressed)', 20]
+['waking up and completing her morning routine (making breakfast and eating)', 15]
+['waking up and completing her morning routine (checking her schedule and making a to-do list for the day)', 10]
+['attending physics classes', 120]
+['having lunch at Hobbs Cafe', 60]
+['studying at Hobbs Cafe', 180]
+['streaming games on Twitch', 120]
+['having dinner at Hobbs Cafe', 60]
+['streaming games on Twitch', 60]
+['studying at home', 120]
+['relaxing and watching TV or hanging out with friends', 60]
+['winding down and getting ready for bed', 60]
+=== END OF TEXT ===============================================
+

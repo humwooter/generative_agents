@@ -172,3 +172,23 @@ def save_gpt_prompt_to_file(filename: str, params: dict, prompt: str):
                          prompt + \
                          "\n=== END OF PROMPT ==============================================\n\n"
         file.write(formatted_text)
+
+
+def save_gpt_output_to_file(filename: str, params: dict, prompt: str, response: str):
+    # Ensure 'console_logs' directory exists and append output to the specified file
+    logs_dir = 'console_logs'
+    if not os.path.exists(logs_dir):
+        os.makedirs(logs_dir)
+
+    file_path = os.path.join(logs_dir, filename)
+    with open(file_path, 'a') as file:
+        # Convert parameters dictionary to a string
+        params_str = "\n".join(f"{key}: {value}" for key, value in params.items())
+        
+        # Formatting the start and end of the text with parameters, prompt, and response
+        formatted_text = "\n=== START OF ENTRY =============================================\n" + \
+                         "PARAMETERS:\n" + params_str + \
+                         "\n\nPROMPT:\n" + prompt + \
+                         "\n\nRESPONSE:\n" + str(response) + \
+                         "\n=== END OF ENTRY ===============================================\n\n"
+        file.write(formatted_text)

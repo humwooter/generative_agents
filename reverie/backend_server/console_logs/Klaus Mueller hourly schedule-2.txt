@@ -20,3 +20,158 @@
 ["sleeping to get a good night's rest for the next day", 60]
 === END OF TEXT ===============================================
 
+
+=== START OF TEXT =============================================
+['sleeping', 480]
+['completing his morning routine (waking up and stretching)', 5]
+['completing his morning routine (taking a shower)', 10]
+['completing his morning routine (getting dressed)', 5]
+['completing his morning routine (making breakfast)', 15]
+['completing his morning routine (eating breakfast)', 10]
+['completing his morning routine (washing dishes)', 5]
+['completing his morning routine (packing his bag for work)', 10]
+['attending a jujutsu training session', 60]
+['discussing menu ideas with Isabella at Hobbs Cafe', 120]
+['having lunch at Hobbs Cafe', 60]
+['testing a new recipe with Isabella at Hobbs Cafe', 60]
+['discussing menu ideas with Isabella at Hobbs Cafe', 60]
+['testing a new recipe with Isabella at Hobbs Cafe', 180]
+['attending a sorcery class', 60]
+['having dinner with Isabella at Hobbs Cafe', 60]
+['watching his favorite TV show with Isabella', 60]
+["discussing ideas for the Valentine's Day event with Isabella at Hobbs Cafe", 120]
+["getting ready for bed and reflecting on the day's progress with Isabella", 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 420]
+['waking up and completing his morning routine (waking up and turning off his alarm)', 5]
+['waking up and completing his morning routine (stretching and getting out of bed)', 5]
+['waking up and completing his morning routine (making his bed)', 5]
+['waking up and completing his morning routine (using the bathroom and washing his face)', 10]
+['waking up and completing his morning routine (brushing his teeth)', 5]
+['waking up and completing his morning routine (taking a shower)', 15]
+['waking up and completing his morning routine (getting dressed)', 15]
+['working on his research paper at the library', 60]
+['still working on his research paper at the library', 60]
+['attending a sociology lecture', 60]
+['still attending the sociology lecture', 60]
+['taking a break and having lunch at Hobbs Cafe', 60]
+['back at the library working on his research paper', 60]
+['still working on his research paper at the library', 60]
+['attending a sociology lecture', 60]
+['still attending the sociology lecture', 60]
+['having dinner', 60]
+['still working on his research paper at the library', 60]
+['still working on his research paper at the library or watching TV', 120]
+['finishing up his research paper and getting ready for bed', 60]
+['getting ready for bed', 60]
+['going to bed', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 420]
+['waking up and completing his morning routine (waking up and turning off his alarm)', 5]
+['waking up and completing his morning routine (stretching and doing some light exercises)', 10]
+['waking up and completing his morning routine (taking a shower and getting dressed)', 20]
+['waking up and completing his morning routine (making breakfast and eating)', 15]
+['waking up and completing his morning routine (packing his bag with his laptop and research materials)', 5]
+['waking up and completing his morning routine (checking his schedule and making sure he has everything he needs for the day)', 5]
+['at the library working on his research paper', 240]
+['taking a break and eating lunch at Hobbs Cafe', 60]
+['at the library working on his research paper', 240]
+['taking a break and having dinner at 5:30 pm', 60]
+['reading at home', 180]
+['getting ready for bed', 60]
+['sleeping', 120]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 420]
+['waking up and completing his morning routine (stretching in bed)', 5]
+['waking up and completing his morning routine (using the bathroom)', 5]
+['waking up and completing his morning routine (taking a shower)', 10]
+['waking up and completing his morning routine (getting dressed)', 5]
+['waking up and completing his morning routine (making breakfast)', 15]
+['waking up and completing his morning routine (eating breakfast)', 10]
+['waking up and completing his morning routine (washing his dishes)', 10]
+['having breakfast', 60]
+['at the library working on his research paper', 60]
+['researching and taking notes for his paper', 60]
+['taking a break and eating lunch at Hobbs Cafe', 120]
+['continuing his research and writing at the library', 240]
+['taking a break and eating dinner at Hobbs Cafe', 60]
+['continuing his research and writing at the library', 120]
+['taking a break and eating dinner at Hobbs Cafe', 60]
+['finishing up his research paper at the library', 180]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 480]
+['waking up and completing his morning routine (waking up and turning off his alarm)', 5]
+['waking up and completing his morning routine (stretching and getting out of bed)', 5]
+['waking up and completing his morning routine (making his bed)', 5]
+['waking up and completing his morning routine (using the bathroom and washing his face)', 10]
+['waking up and completing his morning routine (brushing his teeth)', 5]
+['waking up and completing his morning routine (getting dressed)', 10]
+['waking up and completing his morning routine (making breakfast)', 20]
+['working on his research paper at the Oak Hill College library', 180]
+['having lunch at Hobbs Cafe', 60]
+['working on his research paper at the Oak Hill College library', 180]
+['taking a break and grabbing coffee', 60]
+['attending his sociology class', 180]
+['having dinner at Hobbs Cafe', 60]
+['finishing up his research paper at the library', 180]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 420]
+['waking up and completing his morning routine (stretching in bed)', 5]
+['waking up and completing his morning routine (using the bathroom)', 5]
+['waking up and completing his morning routine (taking a shower)', 10]
+['waking up and completing his morning routine (getting dressed)', 5]
+['waking up and completing his morning routine (making breakfast)', 15]
+['waking up and completing his morning routine (eating breakfast)', 10]
+['waking up and completing his morning routine (washing his dishes)', 10]
+['having breakfast', 60]
+['at the library, researching for his paper', 60]
+['writing his research paper', 120]
+['having lunch at Hobbs Cafe', 60]
+['writing his research paper', 300]
+['having dinner', 60]
+['relaxing and watching TV or reading a book', 120]
+['finishing up any remaining work for his research paper', 60]
+['getting ready for bed', 60]
+['going to bed at 11:00 pm', 60]
+=== END OF TEXT ===============================================
+
+
+=== START OF TEXT =============================================
+['sleeping', 420]
+['waking up and completing his morning routine (waking up and turning off his alarm)', 5]
+['waking up and completing his morning routine (stretching and getting out of bed)', 5]
+['waking up and completing his morning routine (making his bed)', 5]
+['waking up and completing his morning routine (using the bathroom and washing his face)', 10]
+['waking up and completing his morning routine (brushing his teeth)', 5]
+['waking up and completing his morning routine (taking a shower)', 15]
+['waking up and completing his morning routine (getting dressed)', 15]
+['at the library at Oak Hill College researching and taking notes for his paper', 60]
+['still at the library, taking a break to grab a snack and stretch', 180]
+['taking a lunch break and eating at Hobbs Cafe', 60]
+['still at the library, working on his paper', 120]
+['taking a break and grabbing a coffee at Hobbs Cafe', 60]
+['still at the library, working on his paper', 60]
+['finishing up his paper and reviewing it for any final edits', 60]
+['finishing up and reviewing his paper at the library', 60]
+['heading home and having dinner at 7:00 pm', 60]
+['taking a break and watching a documentary on gentrification for his paper', 60]
+['finishing up and reviewing his paper at home', 60]
+['winding down and getting ready for bed', 60]
+["going to bed at 11:00 pm to get a good night's rest before turning in his paper tomorrow", 60]
+=== END OF TEXT ===============================================
+

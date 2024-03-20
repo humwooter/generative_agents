@@ -1,11 +1,13 @@
 Function Call Frequencies:
 Function 'generate_prompt' called 83 times
-Function 'GPT_request' called 74 times
+Function 'GPT_request_with_local_fallback' called 76 times
+Function 'GPT_request' called 71 times
 Function 'run_gpt_prompt_generate_hourly_schedule' called 50 times
 Function 'get_embedding' called 20 times
 Function 'ChatGPT_safe_generate_response' called 9 times
 Function 'ChatGPT_request' called 9 times
 Function 'run_gpt_prompt_pronunciatio' called 6 times
+Function 'Gemma_request_with_local_fallback' called 5 times
 Function 'run_gpt_prompt_wake_up_hour' called 3 times
 Function 'run_gpt_prompt_daily_plan' called 3 times
 Function 'run_gpt_prompt_task_decomp' called 3 times

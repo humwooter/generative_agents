@@ -1,0 +1,124 @@
+
+=== START OF ENTRY =============================================
+PARAMETERS:
+engine: gpt-3.5-turbo-instruct
+max_tokens: 5
+temperature: 0.8
+top_p: 1
+stream: False
+frequency_penalty: 0
+presence_penalty: 0
+stop: ['\n']
+
+PROMPT:
+Name: Isabella Rodriguez
+Age: 34
+Innate traits: friendly, outgoing, hospitable
+Learned traits: Isabella Rodriguez is a cafe owner of Hobbs Cafe who loves to make people feel welcome. She is always looking for ways to make the cafe a place where people can come to relax and enjoy themselves.
+Currently: Isabella Rodriguez is planning on having a Valentine's Day party at Hobbs Cafe with her customers on February 14th, 2023 at 5pm. She is gathering party material, and is telling everyone to join the party at Hobbs Cafe on February 14th, 2023, from 5pm to 7pm.
+Lifestyle: Isabella Rodriguez goes to bed around 11pm, awakes up around 6am.
+Daily plan requirement: Isabella Rodriguez opens Hobbs Cafe at 8am everyday, and works at the counter until 8pm, at which point she closes the cafe.
+Current Date: Monday February 13
+
+
+In general, Isabella Rodriguez goes to bed around 11pm, awakes up around 6am.
+Isabella's wake up hour:
+
+RESPONSE:
+{"wake_up_hour": "6am"}
+6am
+=== END OF ENTRY ===============================================
+
+
+=== START OF ENTRY =============================================
+PARAMETERS:
+engine: gpt-3.5-turbo-instruct
+max_tokens: 5
+temperature: 0.8
+top_p: 1
+stream: False
+frequency_penalty: 0
+presence_penalty: 0
+stop: ['\n']
+
+PROMPT:
+Name: Maria Lopez
+Age: 21
+Innate traits: energetic, enthusiastic, inquisitive
+Learned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.
+Currently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.
+Lifestyle: Maria Lopez goes to bed around 2am, awakes up around 9am, eats dinner around 6pm. She likes to hang out at Hobbs Cafe if it's before 6pm.
+Daily plan requirement: Maria Lopez spends at least 3 hours a day Twitch streaming or gaming.
+Current Date: Monday February 13
+
+
+In general, Maria Lopez goes to bed around 2am, awakes up around 9am, eats dinner around 6pm. She likes to hang out at Hobbs Cafe if it's before 6pm.
+Maria's wake up hour:
+
+RESPONSE:
+{ "@type": "Answer", "text": "Maria Lopez wakes up around 9am." }
+MariaLopezwakesuparound9am.
+=== END OF ENTRY ===============================================
+
+
+=== START OF ENTRY =============================================
+PARAMETERS:
+engine: gpt-3.5-turbo-instruct
+max_tokens: 5
+temperature: 0.8
+top_p: 1
+stream: False
+frequency_penalty: 0
+presence_penalty: 0
+stop: ['\n']
+
+PROMPT:
+Name: Maria Lopez
+Age: 21
+Innate traits: energetic, enthusiastic, inquisitive
+Learned traits: Maria Lopez is a student at Oak Hill College studying physics and a part time Twitch game streamer who loves to connect with people and explore new ideas.
+Currently: Maria Lopez is working on her physics degree and streaming games on Twitch to make some extra money. She visits Hobbs Cafe for studying and eating just about everyday.
+Lifestyle: Maria Lopez goes to bed around 2am, awakes up around 9am, eats dinner around 6pm. She likes to hang out at Hobbs Cafe if it's before 6pm.
+Daily plan requirement: Maria Lopez spends at least 3 hours a day Twitch streaming or gaming.
+Current Date: Monday February 13
+
+
+In general, Maria Lopez goes to bed around 2am, awakes up around 9am, eats dinner around 6pm. She likes to hang out at Hobbs Cafe if it's before 6pm.
+Maria's wake up hour:
+
+RESPONSE:
+{"wakeUpHour": "9am"}
+9am
+=== END OF ENTRY ===============================================
+
+
+=== START OF ENTRY =============================================
+PARAMETERS:
+engine: gpt-3.5-turbo-instruct
+max_tokens: 5
+temperature: 0.8
+top_p: 1
+stream: False
+frequency_penalty: 0
+presence_penalty: 0
+stop: ['\n']
+
+PROMPT:
+Name: Klaus Mueller
+Age: 20
+Innate traits: kind, inquisitive, passionate
+Learned traits: Klaus Mueller is a student at Oak Hill College studying sociology. He is passionate about social justice and loves to explore different perspectives.
+Currently: Klaus Mueller is writing a research paper on the effects of gentrification in low-income communities.
+Lifestyle: Klaus Mueller goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.
+Daily plan requirement: Klaus Mueller goes to the library at Oak Hill College early in the morning, spends his days writing, and eats at Hobbs Cafe.
+Current Date: Monday February 13
+
+
+In general, Klaus Mueller goes to bed around 11pm, awakes up around 7am, eats dinner around 5pm.
+Klaus's wake up hour:
+
+RESPONSE:
+{ "wakeUpHour": "7am" }
+7am
+=== END OF ENTRY ===============================================
+
